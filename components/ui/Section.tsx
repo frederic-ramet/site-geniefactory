@@ -26,7 +26,7 @@ export function Section({
 }: Props) {
   return (
     <Tag
-      className={clsx('relative py-20 sm:py-24 md:py-28', className)}
+      className={clsx('relative scroll-mt-20 py-20 sm:py-24 md:py-28', className)}
       {...rest}
     >
       <div className={clsx(bleed ? '' : 'container')}>
@@ -34,7 +34,7 @@ export function Section({
           <motion.header
             initial={{ opacity: 0, y: 28 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className={clsx(
               'mb-10 flex flex-col gap-4 md:mb-14',
