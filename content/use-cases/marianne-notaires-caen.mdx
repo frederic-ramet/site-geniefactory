@@ -1,0 +1,145 @@
+---
+title: "IA et notariat : comment la Chambre des Notaires de Caen transforme sa pratique avec MarIAnne"
+description: >-
+  La Chambre des Notaires de Caen utilise MarIAnne, une IA documentaire sous
+  supervision experte, pour structurer son savoir déontologique et accompagner
+  415 notaires. Cas client GenieFactory.
+client: "Chambre des Notaires de Caen"
+category: "Profession réglementée · Notariat"
+date: 2026-04-15
+updated: 2026-04-15
+image: /images/use-cases/marianne-notaires-caen.jpg
+---
+
+> **En bref.** La Chambre des Notaires de Caen (CNCAC) a déployé MarIAnne, une
+> IA documentaire construite sur un graphe de connaissances de 9 000 segments,
+> sous supervision experte. Objectif : structurer le savoir déontologique de
+> la Chambre pour accompagner 415 notaires — dont 255 nommés depuis 2015 —
+> sans dépendre de la disponibilité d'une seule personne.
+
+## Une profession en pleine mutation
+
+Depuis la loi Macron de 2015, le notariat français vit une transformation sans
+précédent. À la Cour d'appel de Caen (Calvados, Manche, Orne), 70 offices ont
+été créés sur 194. Les effectifs ont quasiment doublé. 255 notaires sur 415
+ont été nommés après 2015.
+
+Pour la Chambre des Notaires (CNCAC), la conséquence est directe : plus de
+professionnels à accompagner, former et encadrer. Plus de questions sur la
+déontologie, les obligations professionnelles, la réglementation. Et toujours
+la même équipe pour y répondre.
+
+Le savoir-faire existe — dans les têtes, dans les dossiers, dans des années
+de pratique. Mais il n'est ni structuré, ni accessible à la demande, ni
+transmissible à l'échelle.
+
+## Trois problèmes que la Chambre ne pouvait plus ignorer
+
+**La connaissance est enfermée.** La doctrine déontologique vit dans des
+documents épars et dans la mémoire des experts. Quand un notaire pose une
+question, la réponse dépend de qui est disponible et de sa connaissance
+personnelle du sujet.
+
+**La demande explose.** Le doublement des effectifs a multiplié les
+sollicitations. L'équipe de la Chambre ne peut pas absorber cette charge sans
+que les délais s'allongent.
+
+**La transmission est fragile.** Départs en retraite, turnover, renouvellement
+générationnel : ce qui n'est pas formalisé disparaît avec les personnes qui
+le portent.
+
+## MarIAnne : une IA documentaire conçue pour une profession réglementée
+
+MarIAnne n'est pas un chatbot généraliste. C'est un dispositif complet,
+construit sur la connaissance propre de la Chambre, avec une architecture
+pensée pour le notariat.
+
+### Un graphe de connaissances métier
+
+Le corpus documentaire de la Chambre — Règlement Professionnel National,
+circulaires du CSN, convention collective, textes de loi, guides, fiches
+d'information — est indexé dans un
+[graphe de connaissances](/blog/transformation-agentique) Neo4j. 9 000
+segments classés par type de source, reliés par des liens sémantiques. Ce
+n'est pas un moteur de recherche — c'est une mémoire organisationnelle
+interrogeable.
+
+### Un RAG hybride sourcé
+
+Quand un notaire pose une question, MarIAnne identifie les passages
+pertinents dans le graphe, les assemble, et produit une réponse sourcée.
+Seuls les passages pertinents sont envoyés au modèle de langage — jamais
+les documents en intégralité. Chaque réponse est traçable jusqu'à sa source.
+
+### Le Tribunal : l'humain garde le contrôle
+
+C'est la pièce maîtresse. L'experte de la Chambre revoit les réponses de
+l'IA, classifie les erreurs, applique les corrections. Elle a un pouvoir de
+veto. Ce n'est pas de l'annotation passive — c'est de la co-gouvernance.
+Les erreurs sont typées, tracées, et chaque correction enrichit la base.
+
+### Une boucle d'amélioration continue
+
+Retours utilisateurs, corrections de l'experte, nouvelles fiches validées —
+tout est capitalisé dans le graphe. MarIAnne apprend sous supervision. La
+doctrine évolue, la base suit.
+
+## Résultats concrets
+
+**Réponses en temps réel.** Une question qui nécessitait un appel ou un
+échange de mails obtient une première réponse en quelques secondes. L'équipe
+se concentre sur les cas complexes.
+
+**Homogénéité garantie.** Deux notaires qui posent la même question
+obtiennent la même réponse, fondée sur les mêmes sources.
+
+**Expertise préservée.** Le savoir de l'experte est structuré dans le graphe,
+versionné, traçable. Le jour où elle part, la connaissance reste.
+
+**Transmission accélérée.** Les 255 nouveaux notaires accèdent instantanément
+à la doctrine accumulée. MarIAnne est un accélérateur de montée en compétence,
+pas un remplaçant.
+
+## Les principes de conception
+
+Ces choix distinguent MarIAnne d'un chatbot IA classique — et sont au cœur de
+l'approche [transformation agentique](/blog/transformation-agentique) de
+GenieFactory.
+
+**L'humain reste au contrôle.** L'IA propose, l'humain dispose. Dans une
+profession réglementée, c'est non négociable.
+
+**Le client reste propriétaire.** Les données, le graphe, les fiches, les
+corrections — tout appartient à la CNCAC. Pas de lock-in, pas de dépendance.
+La Chambre peut changer de prestataire sans perdre son capital de
+connaissances.
+
+**La personnalisation est native.** Fiches locales, informations régionales,
+thésaurus adapté — MarIAnne reflète la réalité de chaque chambre.
+
+**La connaissance est vivante.** Chaque évolution est tracée. La base
+s'enrichit en continu sans figer le savoir. C'est la différence entre une
+FAQ statique et une mémoire organisationnelle qui apprend.
+
+## Un modèle reproductible
+
+MarIAnne fonctionne aujourd'hui à l'échelle de la Chambre interdépartementale
+de Caen. Le modèle a vocation à s'étendre à l'ensemble de l'écosystème
+notarial français.
+
+Mais l'enjeu dépasse le notariat. Le dispositif — graphe de connaissances
+métier, RAG hybride, boucle d'évaluation sous supervision experte, propriété
+des données par le client — est reproductible dans toute profession
+réglementée ou tout métier confronté aux mêmes défis : transmission du savoir,
+montée en charge, homogénéité des pratiques.
+
+**Votre savoir métier est-il un actif durable, ou un risque de perte ?**
+
+[**Discuter de votre projet →**](https://calendar.google.com/calendar/u/0/appointments/schedules/placeholder)
+
+---
+
+### Partenaires du projet
+
+MarIAnne est développé par GenieFactory en partenariat avec la Chambre des
+Notaires de la Cour d'Appel de Caen (CNCAC) et B-Strong.
