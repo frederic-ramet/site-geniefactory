@@ -121,7 +121,7 @@ export function getBlogPost(slug: string) {
 }
 
 export function getUseCases() {
-  return readCollection('use-cases', useCaseFrontmatterSchema).sort((a, b) =>
+  return readCollection('cas-clients', useCaseFrontmatterSchema).sort((a, b) =>
     b.frontmatter.date.localeCompare(a.frontmatter.date),
   );
 }

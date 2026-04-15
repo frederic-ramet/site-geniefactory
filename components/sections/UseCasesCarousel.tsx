@@ -89,7 +89,7 @@ export function UseCasesCarousel({ items }: { items: UseCaseCard[] }) {
                   </p>
                 </div>
                 <Link
-                  href={`/use-cases/${uc.slug}`}
+                  href={`/cas-clients/${uc.slug}`}
                   className="mt-auto inline-flex items-center gap-1 text-sm font-semibold text-brand-700 transition group-hover:gap-2"
                 >
                   Voir plus

@@ -19,7 +19,7 @@ export function generateMetadata({ params }: Params): Metadata {
   return {
     title: uc.frontmatter.title,
     description: uc.frontmatter.description,
-    alternates: { canonical: `/use-cases/${uc.slug}` },
+    alternates: { canonical: `/cas-clients/${uc.slug}` },
   };
 }
 

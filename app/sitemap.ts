@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const useCaseRoutes: MetadataRoute.Sitemap = getUseCases().map((u) => ({
-    url: `${base}/use-cases/${u.slug}`,
+    url: `${base}/cas-clients/${u.slug}`,
     lastModified: new Date(u.frontmatter.updated ?? u.frontmatter.date),
     changeFrequency: 'monthly',
     priority: 0.6,

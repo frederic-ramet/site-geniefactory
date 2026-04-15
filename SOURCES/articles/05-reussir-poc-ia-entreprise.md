@@ -1,0 +1,60 @@
+---
+title: "Comment réussir un POC IA en entreprise ?"
+slug: reussir-poc-ia-entreprise
+description: "27% des projets IA échouent. Voici les 5 facteurs de succès identifiés sur 200 déploiements B2B français pour réussir votre POC IA du premier coup."
+author:
+  name: Frédéric Ramet
+  role: Co-fondateur, GenieFactory
+  linkedin: https://www.linkedin.com/in/fredericramet/
+date: 2026-04-15
+draft: false
+priority: P2
+keywords: [réussir POC IA, POC IA entreprise, facteurs succès IA, déploiement IA PME, projet IA réussi]
+image: /public/images/blog/reussir-poc-ia-entreprise.webp
+---
+
+# Comment réussir un POC IA en entreprise ?
+
+En choisissant le bon cas d'usage, en cadrant avant de coder, en intégrant la validation humaine, en formant les équipes, et en déployant vite. Sur 200 projets IA B2B français étudiés, ces 5 facteurs séparent les projets qui réussissent de ceux qui échouent.
+
+## Quel cas d'usage choisir pour un premier POC IA ?
+
+Le plus démontrable, pas le plus ambitieux. Les données sur 200 déploiements montrent que la stratégie optimale est de commencer par les quick wins pour construire la crédibilité, puis de scaler vers les cas complexes.
+
+Les cas d'usage à plus fort ROI pour un premier projet : le lead scoring B2B (+368% ROI médian, breakeven 6 mois), la génération de propositions commerciales (+285%, breakeven 5 mois), et l'analyse documentaire (+312%, breakeven 8 mois).
+
+À éviter pour un premier POC : la maintenance prédictive (+465% ROI mais breakeven 10 mois et complexité élevée) et tout cas d'usage qui tente d'automatiser des tâches nécessitant un jugement expert — c'est la cause n°1 d'échec (38% des projets ratés).
+
+## Quel budget allouer à un POC IA ?
+
+Moins que vous ne pensez. Les projets IA à moins de 10K€ ont un ROI médian de +245%. Ceux à plus de 100K€ : +85%. La corrélation est inversée et statistiquement significative.
+
+Pourquoi ? Les petits budgets forcent à cadrer précisément, à choisir un cas d'usage unique et borné, et à déployer vite. Les gros budgets génèrent du scope creep, de la complexité politique, et du tool-first thinking.
+
+Chez GenieFactory, le format Hackathon à 18K€ est calibré dans la fourchette haute de ROI : un cas d'usage, un livrable en production, 6 semaines.
+
+## Comment éviter les 3 erreurs qui tuent un POC IA ?
+
+**Erreur 1 : le mauvais cas d'usage (38% des échecs).** Test simple : si le cas d'usage nécessite un jugement expert pour les cas limites, l'IA seule ne suffira pas. Construisez un système humain+IA, pas un automate.
+
+**Erreur 2 : le tool-first thinking (19% des échecs).** Si vous avez choisi l'outil avant de définir le problème, vous allez démontrer la capacité de l'outil — pas résoudre un problème métier. Cadrez d'abord avec le framework [ICPC](/blog/framework-identifier-cadrer-produire-capitaliser).
+
+**Erreur 3 : pas de sponsor exécutif (24% des échecs).** Un POC IA piloté par un manager intermédiaire sans alignement avec la direction sera coupé à M+6. Le sponsor exécutif n'est pas un nice-to-have — c'est un prérequis.
+
+## Quelle durée pour un POC IA réussi ?
+
+Moins de 6 semaines. Les données sont claires : taux d'échec de 5% pour les projets déployés en moins de 6 semaines, contre 31% au-delà de 24 semaines. Agile bat waterfall systématiquement.
+
+Un POC qui prend 6 mois n'est pas un POC rigoureux — c'est un projet mal cadré. Si le cadrage est bon, le déploiement est rapide.
+
+## Quels indicateurs suivre pendant le POC ?
+
+Quatre métriques essentielles : le taux d'adoption réelle par les utilisateurs terrain (cible : 50%+ à M3), le ROI mesuré (pas estimé), le taux d'incidents critiques (cible : moins de 3 pour 100 utilisateurs/an avec validation humaine), et la satisfaction utilisateur (cible : 90%+).
+
+Ne mesurez pas le nombre de features livrées. Mesurez la valeur métier créée.
+
+**[Lancer votre POC IA cadré →](/contact)**
+
+---
+
+*Article lié : [Comment passer d'un POC IA à la production ?](/blog/passer-poc-ia-production)*

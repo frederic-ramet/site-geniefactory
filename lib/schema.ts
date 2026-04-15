@@ -126,7 +126,7 @@ export function articleSchemaForUseCase(
   fm: UseCaseFrontmatter,
 ): ReturnType<typeof articleSchema> {
   return articleSchema({
-    url: `${siteConfig.url}/use-cases/${slug}`,
+    url: `${siteConfig.url}/cas-clients/${slug}`,
     title: fm.title,
     description: fm.description,
     date: fm.date,

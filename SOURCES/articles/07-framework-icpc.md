@@ -1,0 +1,76 @@
+---
+title: "Le framework ICPC : Identifier, Cadrer, Produire, Capitaliser"
+slug: framework-identifier-cadrer-produire-capitaliser
+description: "Le framework ICPC est la méthode GenieFactory pour structurer la transformation agentique. 4 étapes, 4 livrables, une boucle de capitalisation. Méthode détaillée."
+author:
+  name: Frédéric Ramet
+  role: Co-fondateur, GenieFactory
+  linkedin: https://www.linkedin.com/in/fredericramet/
+date: 2026-04-15
+draft: false
+priority: P2
+keywords: [framework ICPC, méthode transformation agentique, cadrage projet IA, capitalisation Knowledge Graph, méthodologie IA entreprise]
+image: /public/images/blog/framework-identifier-cadrer-produire-capitaliser.webp
+---
+
+# Le framework ICPC : Identifier, Cadrer, Produire, Capitaliser
+
+Le framework ICPC est la méthode GenieFactory pour structurer la [transformation agentique](/blog/transformation-agentique) d'une entreprise, projet par projet. Quatre étapes, quatre livrables, et une boucle de capitalisation qui fait que chaque projet enrichit le suivant.
+
+## Pourquoi un framework est-il nécessaire ?
+
+Parce que 80% des projets Data et IA échouent — et la cause n'est jamais technique. C'est un problème de méthode : mauvais cas d'usage (38% des échecs), outil choisi avant le problème (19%), absence de sponsor (24%), pas de conduite du changement (12%).
+
+Le framework ICPC adresse chaque cause d'échec avec une étape dédiée. Ce n'est pas un processus waterfall — c'est un cycle itératif où la dernière étape (Capitaliser) nourrit la première (Identifier) du projet suivant.
+
+## Étape 1 : Identifier — choisir le bon cas d'usage
+
+Cartographier les cas d'usage potentiels et scorer chaque opportunité sur deux axes : valeur métier et faisabilité technique. Ne pas partir de la technologie — partir du problème.
+
+Le test du ROI en une phrase : si vous ne pouvez pas écrire le ROI attendu en une phrase ("ce projet va réduire le BFR de 2M€ en recalibrant les paramètres MRP"), le cas d'usage n'est pas assez cadré. Reformulez ou passez au suivant.
+
+Livrable : un portefeuille priorisé avec un ROI formulé pour chaque cas d'usage. Chez GenieFactory, cette identification passe par des entretiens métier structurés — guidés par l'IA, validés par les experts.
+
+## Étape 2 : Cadrer — aligner métier, tech et direction
+
+C'est la phase que tout le monde saute — et la cause n°1 d'échec. 71% des projets IT échouent par cadrage déficient. Le problème n'est pas que les gens ne cadrent pas — c'est qu'ils cadrent en silo. Le métier écrit un cahier des charges que la tech ne comprend pas. La tech construit ce qu'elle a compris. La direction découvre le résultat 6 mois plus tard.
+
+Le cadrage ICPC aligne les trois parties sur le même périmètre, les mêmes objectifs, les mêmes contraintes — avant toute ligne de code.
+
+Livrable : des spécifications validées par les trois parties, prêtes à développer. Pas un document de 200 pages — un cadrage opérationnel qui tient en quelques pages. Chez GenieFactory, L'Établi génère ces specs à partir des entretiens métier, avec validation croisée automatique.
+
+## Étape 3 : Produire — déployer en conditions réelles
+
+Construire et déployer les agents IA en conditions réelles. Pas en labo. Pas en démo. Sur le terrain, avec les vrais utilisateurs, les vraies données, les vrais edge cases.
+
+Deux principes non négociables :
+
+Le human-in-the-loop est dans l'architecture, pas en option. Les systèmes avec validation humaine ont 4,3× moins d'incidents critiques et +372% de ROI médian vs +268% sans. L'IA propose, l'humain valide.
+
+Le déploiement est rapide. Moins de 6 semaines : 5% d'échec. Plus de 24 semaines : 31%. Si le cadrage est bon, la production est rapide.
+
+Livrable : une application en production, adoptée par les équipes. Pas un prototype qui dort sur un serveur de staging.
+
+## Étape 4 : Capitaliser — encoder ce qui a été appris
+
+C'est l'étape que personne ne fait — et c'est celle qui change tout. Chaque projet produit de la connaissance : des processus documentés, des règles métier explicitées, des patterns réutilisables, des ontologies de domaine.
+
+Cette connaissance est encodée dans un Knowledge Graph — une mémoire organisationnelle qui appartient à l'entreprise. Le projet suivant ne repart pas de zéro. Il s'appuie sur tout ce qui a été appris avant.
+
+C'est comme ça qu'on passe de "un projet IA" à "une transformation". Et c'est la différence fondamentale entre la [transformation digitale et la transformation agentique](/blog/transformation-agentique-vs-digitale).
+
+Livrable : un capital IA documenté, propriété du client. Knowledge Graph enrichi, patterns identifiés, templates sectoriels réutilisables.
+
+## Comment le cycle ICPC s'accélère avec le temps ?
+
+La boucle Capitaliser → Identifier est le mécanisme clé. Le premier projet part de zéro. Le deuxième s'appuie sur le Knowledge Graph du premier. Le troisième bénéficie des patterns des deux précédents.
+
+Exemple concret : un diagnostic supply chain sur une ETI industrielle produit des ontologies métier (assemblage CTO/ETO), des règles de scoring, des patterns de diagnostic. Le diagnostic suivant — même secteur ou secteur adjacent — démarre avec cette base. Le temps de cadrage se réduit, la qualité du diagnostic augmente, le ROI s'accélère.
+
+C'est la capitalisation qui crée le moat défensif : plus le client utilise la plateforme, plus son Knowledge Graph s'enrichit, plus le coût de switching augmente. L'actif est propriétaire — mais il est d'autant plus précieux qu'il est construit dans l'écosystème GenieFactory.
+
+**[Appliquer le framework ICPC à votre projet →](/contact)**
+
+---
+
+*Article lié : [Qu'est-ce que la transformation agentique ?](/blog/transformation-agentique)*

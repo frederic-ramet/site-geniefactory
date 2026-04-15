@@ -29,7 +29,7 @@ export default function PortfolioPage() {
           {useCases.map((u) => (
             <Link
               key={u.slug}
-              href={`/use-cases/${u.slug}`}
+              href={`/cas-clients/${u.slug}`}
               className="card card-hover group flex flex-col gap-4"
             >
               {u.frontmatter.image ? (
