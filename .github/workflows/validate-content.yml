@@ -1,0 +1,38 @@
+name: Validate content
+
+on:
+  pull_request:
+    paths:
+      - 'content/**'
+      - 'lib/data.ts'
+      - 'lib/content.ts'
+      - 'scripts/validate-content.mjs'
+      - 'package.json'
+      - '.github/workflows/validate-content.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'lib/data.ts'
+      - 'lib/content.ts'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Validate content (YAML + MDX frontmatter + forbidden vocab)
+        run: npm run validate:content
+
+      - name: Type check
+        run: npm run typecheck

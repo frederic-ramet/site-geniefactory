@@ -1,0 +1,47 @@
+# -----------------------------------------------------------------------------
+# TÉMOIGNAGES CLIENTS
+#
+# Champ `usable_publicly` :
+#   true  = accord explicite pour affichage public
+#   false = ne PAS afficher (on garde la trace, mais la page filtre ces items)
+#
+# Clients actuellement utilisables publiquement (à remplir avec le contenu
+# fourni par le client) : Chambre des Notaires de Caen, Doc'n Kit.
+# -----------------------------------------------------------------------------
+
+# --- Témoignages en attente de validation publique ---------------------------
+- name: Sébastien Weiss
+  role: Head of Innovation
+  company: Nexans
+  photo: /images/testimonials/weiss.jpg
+  quote: >-
+    Témoignage en cours de validation avec Nexans — non affiché publiquement.
+  usable_publicly: false
+
+- name: Pierre Ly
+  role: Direction Innovation
+  company: Croix-Rouge Française
+  photo: /images/testimonials/ly.jpg
+  quote: >-
+    Témoignage en cours de validation avec la Croix-Rouge — non affiché
+    publiquement.
+  usable_publicly: false
+
+# --- Slots prêts à recevoir le contenu validé --------------------------------
+# À remplir dès que le contenu est fourni — bascule `usable_publicly: true`.
+#
+# - name: "<Nom Prénom>"
+#   role: "<Poste>"
+#   company: "Chambre des Notaires de Caen"
+#   photo: /images/testimonials/notaires-caen.jpg
+#   quote: >-
+#     <Citation du client — 2 à 4 lignes maximum>
+#   usable_publicly: true
+#
+# - name: "<Nom Prénom>"
+#   role: "<Poste>"
+#   company: "Doc'n Kit"
+#   photo: /images/testimonials/docnkit.jpg
+#   quote: >-
+#     <Citation du client — 2 à 4 lignes maximum>
+#   usable_publicly: true

@@ -1,0 +1,42 @@
+- title: Spécifications intelligentes
+  subtitle: Conception orientée besoins métier
+  description: >-
+    L'Établi guide vos équipes pour transformer les idées en spécifications
+    partagées, enrichies de KPIs mesurables. Les métiers restent propriétaires
+    du besoin, la plateforme le rend exploitable.
+  image: /images/features/specifications.webp
+
+- title: Cycle accéléré
+  subtitle: Pensée pour la performance
+  description: >-
+    Réduisez drastiquement vos délais de mise en production. La Forge génère
+    le code métier et déploie automatiquement dans votre environnement.
+  image: /images/features/cycle.webp
+
+- title: Composants IA réutilisables
+  subtitle: Bibliothèque agents, RAG, templates
+  description: >-
+    Des briques prêtes à l'emploi — agents, recherche augmentée, workflows —
+    combinables pour couvrir vos cas d'usage sans repartir de zéro.
+  image: /images/features/components.webp
+
+- title: Compatible environnements
+  subtitle: Intégration ERP, API, workflows
+  description: >-
+    Connecteurs pour vos systèmes existants (ERP, GED, API internes) afin de
+    livrer des applications IA au plus près du réel métier.
+  image: /images/features/integration.webp
+
+- title: Conformité by design
+  subtitle: RBAC, AI Act, traçabilité
+  description: >-
+    Gouvernance, journalisation et contrôle d'accès intégrés nativement. La
+    conformité ne ralentit plus vos itérations — elle les sécurise.
+  image: /images/features/compliance.webp
+
+- title: Propriété du code
+  subtitle: Aucun lock-in plateforme
+  description: >-
+    Le code généré vous appartient. Vous pouvez l'exporter, l'auditer et le
+    faire évoluer hors de la plateforme. Vos actifs digitaux restent à vous.
+  image: /images/features/ownership.webp

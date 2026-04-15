@@ -16,7 +16,7 @@ const steps: Step[] = [
   {
     id: 'ask',
     author: 'user',
-    label: "J'ai besoin d'un chatbot pour mes équipes RH",
+    label: "Nous voulons un copilote RH pour les managers",
   },
   {
     id: 'spec',
@@ -28,21 +28,21 @@ const steps: Step[] = [
   {
     id: 'code',
     author: 'system',
-    label: 'Génération de l\'application',
-    detail: 'Next.js · agents · RAG',
+    label: "Génération de l'application",
+    detail: 'Agents · RAG · RBAC',
     tone: 'progress',
   },
   {
     id: 'test',
     author: 'system',
     label: 'Validation par les métiers',
-    detail: 'Tests immédiats · feedback',
+    detail: 'Tests · feedback · KPIs',
     tone: 'progress',
   },
   {
     id: 'done',
     author: 'system',
-    label: 'Temps gagné : 9 semaines',
+    label: 'Mise en production — traçabilité AI Act active',
     tone: 'success',
   },
 ];

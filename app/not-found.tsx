@@ -1,11 +1,14 @@
 import Link from 'next/link';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { getNav, getFooter } from '@/lib/data';
 
 export default function NotFound() {
+  const nav = getNav();
+  const footer = getFooter();
   return (
     <>
-      <Navbar />
+      <Navbar nav={nav} />
       <main className="flex min-h-[70vh] items-center">
         <div className="container flex flex-col items-center gap-6 py-20 text-center">
           <span className="eyebrow">404</span>
@@ -26,7 +29,7 @@ export default function NotFound() {
           </div>
         </div>
       </main>
-      <Footer />
+      <Footer footer={footer} />
     </>
   );
 }

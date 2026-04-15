@@ -1,0 +1,28 @@
+- number: "01"
+  title: Établi
+  description: >-
+    Capture et structuration des besoins métier. Production des spécifications
+    partagées et des KPIs qui serviront à l'évaluation.
+  image: /images/steps/etabli.webp
+
+- number: "02"
+  title: Forge
+  description: >-
+    Génération automatique du code métier et déploiement en un clic dans votre
+    environnement — avec RBAC, traçabilité et journalisation intégrés.
+  image: /images/steps/forge.webp
+
+- number: "03"
+  title: Évaluation
+  description: >-
+    Test immédiat par les équipes métier, avec suivi temps réel des KPIs
+    définis à l'Établi. Les décisions d'industrialisation s'appuient sur des
+    données, pas des impressions.
+  image: /images/steps/evaluation.webp
+
+- number: "04"
+  title: Communauté
+  description: >-
+    Marketplace de templates métiers et de briques IA réutilisables partagés
+    entre clients — chaque cas d'usage résolu accélère les suivants.
+  image: /images/steps/communaute.webp

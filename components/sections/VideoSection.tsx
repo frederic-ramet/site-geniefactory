@@ -23,8 +23,8 @@ export function VideoSection() {
   return (
     <Section
       eyebrow="Démo"
-      title="Des prototypes IA prêts à être testés"
-      subtitle="Regardez en moins de 90 secondes comment Genie Factory produit une application fonctionnelle depuis un simple brief métier."
+      title="Des agents IA prêts pour la production"
+      subtitle="Découvrez comment GenieFactory transforme un brief métier en application IA gouvernée — de la spec à la mise en production."
       align="center"
     >
       <div className="mx-auto max-w-4xl">

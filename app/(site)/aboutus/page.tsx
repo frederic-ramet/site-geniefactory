@@ -4,12 +4,12 @@ import { PageHeader } from '@/components/ui/PageHeader';
 import { PlaceholderImage } from '@/components/ui/PlaceholderImage';
 import { Section } from '@/components/ui/Section';
 import { siteConfig } from '@/lib/site';
+import { getSeoFor, getFooter } from '@/lib/data';
 
-export const metadata: Metadata = {
-  title: 'À propos',
-  description:
-    "Genie Factory — une équipe produit et IA dédiée à l'industrialisation des applications d'intelligence artificielle dans l'entreprise.",
-};
+export function generateMetadata(): Metadata {
+  const seo = getSeoFor('aboutus');
+  return { title: seo.title, description: seo.description };
+}
 
 const values = [
   {
@@ -30,14 +30,19 @@ const values = [
 ];
 
 export default function AboutPage() {
+  const seo = getSeoFor('aboutus');
+  const footer = getFooter();
   return (
     <>
       <PageHeader
         eyebrow="À propos"
-        title="Une équipe pour industrialiser l'IA — pas la prototyper à l'infini"
-        description="Genie Factory réunit des profils produit, IA et ingénierie, avec un point commun : l'obsession de livrer des outils qui servent vraiment."
+        title={seo.h1 ?? seo.title}
+        description={seo.description}
       />
-      <Section title="Nos convictions" subtitle="Comment on travaille, au quotidien.">
+      <Section
+        title="Nos convictions"
+        subtitle="Comment on travaille, au quotidien."
+      >
         <div className="grid gap-6 md:grid-cols-3">
           {values.map((v) => (
             <div key={v.title} className="card">
@@ -52,18 +57,21 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section title="Là où nous trouver" subtitle="Une adresse, une porte ouverte.">
+      <Section
+        title="Là où nous trouver"
+        subtitle="Une adresse, une porte ouverte."
+      >
         <div className="grid gap-8 md:grid-cols-2">
           <div className="card">
             <h3 className="font-display text-lg font-semibold tracking-tight text-ink-900">
               Bureaux
             </h3>
             <address className="mt-3 not-italic text-ink-700">
-              {siteConfig.address.street}
+              {footer.address.street}
               <br />
-              {siteConfig.address.postalCode} {siteConfig.address.city}
+              {footer.address.postalCode} {footer.address.city}
               <br />
-              {siteConfig.address.country}
+              {footer.address.country}
             </address>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link

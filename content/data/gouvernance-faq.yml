@@ -1,0 +1,32 @@
+# FAQ dédiée à la page /solutions/gouvernance-ia
+# Génère automatiquement un schema FAQPage — cf. spec §5.2.
+
+- question: "Comment GenieFactory répond-elle à l'AI Act ?"
+  answer: >-
+    La plateforme intègre la classification du niveau de risque de chaque cas
+    d'usage, la documentation de conformité, la traçabilité des décisions
+    modèles et la journalisation d'audit. La conformité n'est pas ajoutée
+    après-coup, elle est produite à chaque itération.
+
+- question: "Le RBAC est-il géré nativement ?"
+  answer: >-
+    Oui. Les rôles et permissions sont définis par cas d'usage et propagés à
+    l'ensemble des composants — agents, RAG, connecteurs. L'intégration SSO
+    (SAML, OIDC) est standard.
+
+- question: "Comment les décisions des agents IA sont-elles tracées ?"
+  answer: >-
+    Chaque exécution d'agent produit un journal structuré : prompts, outils
+    appelés, documents récupérés, décisions. Ce journal est consultable par
+    cas d'usage et exportable pour audit.
+
+- question: "Mes données restent-elles dans mon environnement ?"
+  answer: >-
+    Oui — hébergement cloud souverain ou on-premise au choix. Aucune donnée
+    métier ne quitte votre périmètre sans décision explicite.
+
+- question: "Quelle est la garantie de propriété du code généré ?"
+  answer: >-
+    Le code généré vous appartient et est livré dans votre dépôt. Vous pouvez
+    l'exporter, l'auditer et le faire évoluer sans la plateforme — pas de
+    lock-in technique.

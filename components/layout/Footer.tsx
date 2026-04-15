@@ -1,8 +1,9 @@
 import Link from 'next/link';
-import { primaryNav, siteConfig } from '@/lib/site';
+import { siteConfig } from '@/lib/site';
 import { Logo } from './Logo';
+import type { Footer as FooterData } from '@/lib/data';
 
-export function Footer() {
+export function Footer({ footer }: { footer: FooterData }) {
   const year = new Date().getFullYear();
   return (
     <footer className="mt-24 border-t border-ink-100 bg-ink-50/40">
@@ -12,77 +13,59 @@ export function Footer() {
             <Logo className="h-8 w-auto" />
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-600">
-            {siteConfig.description}
+            {footer.tagline}
           </p>
           <address className="mt-6 not-italic text-sm text-ink-600">
-            {siteConfig.address.street}
+            {footer.address.street}
             <br />
-            {siteConfig.address.postalCode} {siteConfig.address.city}
+            {footer.address.postalCode} {footer.address.city}
             <br />
-            {siteConfig.address.country}
+            {footer.address.country}
           </address>
         </div>
-        <nav aria-label="Navigation pied de page">
-          <h3 className="text-sm font-semibold text-ink-900">Navigation</h3>
-          <ul className="mt-4 space-y-2 text-sm">
-            {primaryNav.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="text-ink-600 transition hover:text-ink-900"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-            <li>
-              <Link
-                href="/portfolio"
-                className="text-ink-600 transition hover:text-ink-900"
-              >
-                Portfolio
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <h3 className="text-sm font-semibold text-ink-900">Contact</h3>
-          <ul className="mt-4 space-y-2 text-sm">
-            <li>
-              <a
-                href={`mailto:${siteConfig.email}`}
-                className="text-ink-600 transition hover:text-ink-900"
-              >
-                {siteConfig.email}
-              </a>
-            </li>
-            <li>
-              <a
-                href={siteConfig.linkedin}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="text-ink-600 transition hover:text-ink-900"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href={siteConfig.demoUrl}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="text-ink-600 transition hover:text-ink-900"
-              >
-                Demander une démo
-              </a>
-            </li>
-          </ul>
-        </div>
+        {footer.sections.map((section) => (
+          <nav key={section.title} aria-label={section.title}>
+            <h3 className="text-sm font-semibold text-ink-900">
+              {section.title}
+            </h3>
+            <ul className="mt-4 space-y-2 text-sm">
+              {section.items.map((item) => (
+                <li key={`${section.title}-${item.label}`}>
+                  {item.external ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="text-ink-600 transition hover:text-ink-900"
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="text-ink-600 transition hover:text-ink-900"
+                    >
+                      {item.label}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ))}
       </div>
       <div className="border-t border-ink-100">
         <div className="container flex flex-col items-start justify-between gap-2 py-6 text-xs text-ink-500 sm:flex-row sm:items-center">
-          <p>© {year} Genie Factory. Tous droits réservés.</p>
-          <p>Construit en Next.js + Tailwind — hébergé avec amour.</p>
+          <p>{footer.legal.replace('{year}', String(year))}</p>
+          <p>
+            Contact :{' '}
+            <a
+              href={`mailto:${siteConfig.email}`}
+              className="hover:text-ink-800"
+            >
+              {siteConfig.email}
+            </a>
+          </p>
         </div>
       </div>
     </footer>

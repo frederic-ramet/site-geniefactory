@@ -3,50 +3,22 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Section } from '@/components/ui/Section';
+import type { Step } from '@/lib/data';
 
-const steps = [
-  {
-    n: '01',
-    title: 'Établi',
-    description:
-      'Capture et structuration des besoins métier, production de specs et KPIs.',
-    image: '/images/steps/etabli.webp',
-  },
-  {
-    n: '02',
-    title: 'Forge',
-    description:
-      'Génération automatique du code et déploiement en un clic.',
-    image: '/images/steps/forge.webp',
-  },
-  {
-    n: '03',
-    title: 'Évaluation',
-    description:
-      'Test immédiat par les métiers avec suivi temps réel des KPIs.',
-    image: '/images/steps/evaluation.webp',
-  },
-  {
-    n: '04',
-    title: 'Communauté',
-    description:
-      'Marketplace de templates métiers et briques IA réutilisables.',
-    image: '/images/steps/communaute.webp',
-  },
-];
+const TONES = ['brand', 'ink', 'accent', 'brand'] as const;
 
-export function HowItWorks() {
+export function HowItWorks({ steps }: { steps: Step[] }) {
   return (
     <Section
       id="how-it-works"
       eyebrow="Comment ça marche"
-      title="Du besoin au prototype, en 4 étapes"
-      subtitle="Une boucle courte entre vos équipes métier et l'IA — chaque étape produit un livrable concret et mesurable."
+      title="Du besoin à l'application IA en production"
+      subtitle="Une boucle courte entre vos équipes métier et les agents IA — chaque étape produit un livrable concret et mesurable."
     >
       <ol className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
         {steps.map((step, i) => (
           <motion.li
-            key={step.n}
+            key={step.number}
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
@@ -59,7 +31,7 @@ export function HowItWorks() {
           >
             <div className="flex items-center justify-between">
               <span className="font-display text-xs font-semibold uppercase tracking-widest text-ink-400">
-                Étape {step.n}
+                Étape {step.number}
               </span>
               <span
                 aria-hidden
@@ -69,13 +41,15 @@ export function HowItWorks() {
               </span>
             </div>
             <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-ink-50">
-              <Image
-                src={step.image}
-                alt={step.title}
-                fill
-                className="object-contain p-4"
-                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
-              />
+              {step.image && (
+                <Image
+                  src={step.image}
+                  alt={step.title}
+                  fill
+                  className="object-contain p-4"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                />
+              )}
             </div>
             <div>
               <h3 className="font-display text-xl font-semibold tracking-tight text-ink-900">

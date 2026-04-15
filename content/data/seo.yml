@@ -1,0 +1,48 @@
+home:
+  title: "GenieFactory — La plateforme de transformation agentique pour PME et ETI"
+  description: >-
+    Transformez vos processus métier avec des agents IA en production.
+    Gouvernance, propriété du code, conformité AI Act.
+  og_image: /images/og/home.webp
+  schema: Organization
+  h1: "La plateforme de transformation agentique pour les PME et ETI"
+
+portfolio:
+  title: "Cas d'usage IA en entreprise — GenieFactory"
+  description: >-
+    Découvrez comment nos clients transforment leurs processus métier avec des
+    agents IA : rapprochement bancaire, facturation, sécurité industrielle.
+  og_image: /images/og/portfolio.webp
+  schema: CollectionPage
+  h1: "Cas d'usage en production"
+
+blog:
+  title: "Blog — Retours terrain IA entreprise — GenieFactory"
+  description: >-
+    Articles, guides et retours d'expérience sur la transformation agentique,
+    l'industrialisation IA et la conformité AI Act.
+  og_image: /images/og/blog.webp
+  h1: "Retours terrain IA en entreprise"
+
+aboutus:
+  title: "À propos — GenieFactory"
+  description: "L'équipe derrière la plateforme de transformation agentique GenieFactory."
+  og_image: /images/og/about.webp
+  h1: "Une équipe pour industrialiser l'IA en entreprise"
+
+gouvernance-ia:
+  title: "Gouvernance IA entreprise — Traçabilité, RBAC, conformité AI Act — GenieFactory"
+  description: >-
+    Comment GenieFactory intègre nativement la gouvernance IA : traçabilité,
+    audit, RBAC et conformité AI Act pour vos applications métier.
+  og_image: /images/og/gouvernance.webp
+  schema: FAQPage
+  h1: "Gouvernance IA : conformité AI Act intégrée à la plateforme"
+
+programme-adopters:
+  title: "Programme Early Adopters — GenieFactory"
+  description: >-
+    Rejoignez les premières PME et ETI qui industrialisent leurs applications
+    IA avec GenieFactory. Accompagnement rapproché, tarifs early adopter.
+  og_image: /images/og/adopters.webp
+  h1: "Programme Early Adopters"

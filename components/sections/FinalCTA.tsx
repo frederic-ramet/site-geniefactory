@@ -17,11 +17,12 @@ export function FinalCTA() {
                 Prêt à démarrer
               </span>
               <h2 className="mt-4 font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-                Votre innovation, industrialisée.
+                Vos processus métier, réorganisés par des agents IA.
               </h2>
               <p className="mt-4 max-w-lg text-white/80">
-                Un échange de 30 minutes pour cadrer votre premier cas d'usage
-                et estimer l'impact. Démo live incluse.
+                Un échange de 30 minutes pour cadrer votre premier cas d'usage,
+                estimer l'impact métier et identifier les prérequis AI Act. Démo
+                live incluse.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
