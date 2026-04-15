@@ -51,7 +51,7 @@ function FeatureRow({
         <h3 className="mt-4 font-display text-2xl font-semibold tracking-tight text-ink-900 sm:text-3xl">
           {feature.title}
         </h3>
-        <p className="mt-1 text-base font-medium text-brand-700">
+        <p className="mt-1 text-base font-medium text-coral-600">
           {feature.subtitle}
         </p>
         <p className="mt-4 max-w-xl text-base leading-relaxed text-ink-600">

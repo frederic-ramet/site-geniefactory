@@ -37,7 +37,7 @@ export function FAQ({ items }: { items: FaqItem[] }) {
                     aria-hidden
                     className={clsx(
                       'inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-ink-200 text-ink-700',
-                      open && 'border-brand-200 bg-brand-50 text-brand-700',
+                      open && 'border-coral-100 bg-coral-50 text-coral-600',
                     )}
                   >
                     <svg

@@ -50,6 +50,14 @@ const config: Config = {
           500: '#ff7a2e',
           600: '#e8601a',
         },
+        coral: {
+          50: '#fef2f0',
+          100: '#fde8e4',
+          400: '#f79080',
+          500: '#f47b6b',
+          600: '#e85e4c',
+          700: '#c44435',
+        },
       },
       fontFamily: {
         sans: [
