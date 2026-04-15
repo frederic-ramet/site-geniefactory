@@ -1,8 +1,8 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Section } from '@/components/ui/Section';
-import { PlaceholderImage } from '@/components/ui/PlaceholderImage';
 
 const steps = [
   {
@@ -10,28 +10,28 @@ const steps = [
     title: 'Établi',
     description:
       'Capture et structuration des besoins métier, production de specs et KPIs.',
-    tone: 'brand' as const,
+    image: '/images/steps/etabli.webp',
   },
   {
     n: '02',
     title: 'Forge',
     description:
       'Génération automatique du code et déploiement en un clic.',
-    tone: 'ink' as const,
+    image: '/images/steps/forge.webp',
   },
   {
     n: '03',
     title: 'Évaluation',
     description:
       'Test immédiat par les métiers avec suivi temps réel des KPIs.',
-    tone: 'accent' as const,
+    image: '/images/steps/evaluation.webp',
   },
   {
     n: '04',
     title: 'Communauté',
     description:
       'Marketplace de templates métiers et briques IA réutilisables.',
-    tone: 'brand' as const,
+    image: '/images/steps/communaute.webp',
   },
 ];
 
@@ -68,12 +68,15 @@ export function HowItWorks() {
                 {i + 1}
               </span>
             </div>
-            <PlaceholderImage
-              label={step.title}
-              aspect="video"
-              tone={step.tone}
-              className="rounded-xl"
-            />
+            <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-ink-50">
+              <Image
+                src={step.image}
+                alt={step.title}
+                fill
+                className="object-contain p-4"
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
+              />
+            </div>
             <div>
               <h3 className="font-display text-xl font-semibold tracking-tight text-ink-900">
                 {step.title}

@@ -1,9 +1,9 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRef, useState } from 'react';
 import { Section } from '@/components/ui/Section';
-import { PlaceholderImage } from '@/components/ui/PlaceholderImage';
 import { siteConfig } from '@/lib/site';
 
 export function VideoSection() {
@@ -36,12 +36,16 @@ export function VideoSection() {
               className="group relative block w-full"
               aria-label="Lire la vidéo de démonstration"
             >
-              <PlaceholderImage
-                label="Démo Genie Factory"
-                aspect="video"
-                tone="ink"
-                className="rounded-2xl"
-              />
+              <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-ink-900">
+                <Image
+                  src="/images/demo-thumb.webp"
+                  alt="Démo Genie Factory"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 896px"
+                  priority
+                />
+              </div>
               <span className="absolute inset-0 flex items-center justify-center">
                 <span className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white/95 text-ink-900 shadow-lift transition group-hover:scale-105">
                   <svg
@@ -62,7 +66,7 @@ export function VideoSection() {
               controls
               playsInline
               preload="metadata"
-              poster="/images/demo-thumb.jpg"
+              poster="/images/demo-thumb.webp"
             >
               <source src="/videos/demo.mp4" type="video/mp4" />
               Votre navigateur ne supporte pas la lecture vidéo.

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Section } from '@/components/ui/Section';
 import { testimonials } from '@/lib/testimonials';
@@ -37,15 +38,14 @@ export function Testimonials() {
               « {t.quote} »
             </blockquote>
             <figcaption className="mt-auto flex items-center gap-4 border-t border-ink-100 pt-4">
-              <div
-                aria-hidden
-                className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-brand-100 to-ink-100 font-display text-sm font-semibold text-ink-700"
-              >
-                {t.name
-                  .split(' ')
-                  .map((part) => part[0])
-                  .join('')
-                  .slice(0, 2)}
+              <div className="relative h-12 w-12 overflow-hidden rounded-full bg-ink-100">
+                <Image
+                  src={t.avatar.replace('.jpg', '.webp')}
+                  alt={t.name}
+                  fill
+                  className="object-cover"
+                  sizes="48px"
+                />
               </div>
               <div>
                 <div className="font-semibold text-ink-900">{t.name}</div>
