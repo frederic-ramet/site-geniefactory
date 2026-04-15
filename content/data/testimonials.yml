@@ -27,16 +27,15 @@
     publiquement.
   usable_publicly: false
 
-# --- Slots prêts à recevoir le contenu validé --------------------------------
-# À remplir dès que le contenu est fourni — bascule `usable_publicly: true`.
-#
-# - name: "<Nom Prénom>"
-#   role: "<Poste>"
-#   company: "Chambre des Notaires de Caen"
-#   photo: /images/testimonials/notaires-caen.jpg
-#   quote: >-
-#     <Citation du client — 2 à 4 lignes maximum>
-#   usable_publicly: true
+- name: Delphine Cudelou
+  role: Directrice générale
+  company: Chambre des Notaires de la Cour d'appel de Caen
+  photo: /images/testimonials/notaires-caen.jpg
+  quote: >-
+    MarIAnne est aujourd'hui en production au sein de notre Chambre. Ce dispositif
+    transforme notre savoir empirique en intelligence accessible en temps réel,
+    pour accompagner 415 notaires dans leurs questions déontologiques au quotidien.
+  usable_publicly: true
 #
 # - name: "<Nom Prénom>"
 #   role: "<Poste>"

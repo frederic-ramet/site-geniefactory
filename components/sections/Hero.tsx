@@ -1,9 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 import { siteConfig } from '@/lib/site';
-import { PlaceholderImage } from '@/components/ui/PlaceholderImage';
 import { ChatDemo } from './ChatDemo';
 
 type Props = {
@@ -91,12 +91,16 @@ export function Hero({ h1, subtitle }: Props) {
               className="relative"
             >
               <div className="relative rounded-3xl border border-ink-100 bg-white p-3 shadow-lift">
-                <PlaceholderImage
-                  label="Plateforme Genie Factory"
-                  aspect="video"
-                  tone="ink"
-                  className="rounded-2xl"
-                />
+                <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-ink-50">
+                  <Image
+                    src="/images/logo-hero.webp"
+                    alt="GenieFactory"
+                    fill
+                    className="object-contain p-8"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority
+                  />
+                </div>
               </div>
               <div className="pointer-events-none absolute -bottom-10 -left-4 w-[300px] sm:-left-10 sm:w-[340px]">
                 <ChatDemo />
