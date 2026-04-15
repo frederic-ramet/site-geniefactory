@@ -90,17 +90,15 @@ export function Hero({ h1, subtitle }: Props) {
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
               className="relative"
             >
-              <div className="relative rounded-3xl border border-ink-100 bg-white p-3 shadow-lift">
-                <div className="relative aspect-video w-full overflow-hidden rounded-2xl bg-ink-50">
-                  <Image
-                    src="/images/logo-hero.webp"
-                    alt="GenieFactory"
-                    fill
-                    className="object-contain p-8"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    priority
-                  />
-                </div>
+              <div className="relative flex items-center justify-center">
+                <Image
+                  src="/images/logo-hero.webp"
+                  alt="GenieFactory"
+                  width={480}
+                  height={480}
+                  className="w-full max-w-[480px]"
+                  priority
+                />
               </div>
               <div className="pointer-events-none absolute -bottom-10 -left-4 w-[300px] sm:-left-10 sm:w-[340px]">
                 <ChatDemo />
