@@ -98,9 +98,9 @@ export function Hero({ h1, subtitle }: Props) {
                 <Image
                   src="/images/logo-hero.webp"
                   alt="GenieFactory"
-                  width={480}
-                  height={480}
-                  className="w-full max-w-[480px]"
+                  width={860}
+                  height={860}
+                  className="w-full"
                   priority
                 />
               </div>

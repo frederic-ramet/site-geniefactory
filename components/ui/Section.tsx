@@ -1,3 +1,6 @@
+'use client';
+
+import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import type { HTMLAttributes, ReactNode } from 'react';
 
@@ -28,7 +31,11 @@ export function Section({
     >
       <div className={clsx(bleed ? '' : 'container')}>
         {(eyebrow || title || subtitle) && (
-          <header
+          <motion.header
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
             className={clsx(
               'mb-10 flex flex-col gap-4 md:mb-14',
               align === 'center' && 'items-center text-center',
@@ -38,7 +45,7 @@ export function Section({
             {eyebrow && <span className="eyebrow">{eyebrow}</span>}
             {title && <h2 className="section-title text-balance">{title}</h2>}
             {subtitle && <p className="section-subtitle text-balance">{subtitle}</p>}
-          </header>
+          </motion.header>
         )}
         {children}
       </div>
