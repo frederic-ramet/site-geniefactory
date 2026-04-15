@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gf-bg: 255 255 255;
+  --gf-fg: 17 24 39;
+  --gf-muted: 107 135 176;
+  --gf-brand: 27 93 245;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: rgb(var(--gf-bg));
+  color: rgb(var(--gf-fg));
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(27, 93, 245, 0.18);
+  color: inherit;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition duration-300 ease-out focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-ink-900 text-white shadow-soft hover:-translate-y-0.5 hover:bg-ink-800 hover:shadow-lift;
+  }
+
+  .btn-secondary {
+    @apply btn bg-white text-ink-900 ring-1 ring-inset ring-ink-200 hover:-translate-y-0.5 hover:ring-ink-300;
+  }
+
+  .btn-ghost {
+    @apply btn text-ink-700 hover:bg-ink-50;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-ink-200 bg-white/70 px-3 py-1 text-xs font-medium uppercase tracking-widest text-ink-600 backdrop-blur;
+  }
+
+  .section-title {
+    @apply font-display text-3xl leading-tight tracking-tight text-ink-900 sm:text-4xl md:text-5xl;
+  }
+
+  .section-subtitle {
+    @apply mt-4 max-w-2xl text-base leading-relaxed text-ink-600 sm:text-lg;
+  }
+
+  .card {
+    @apply relative rounded-3xl border border-ink-100 bg-white p-6 shadow-soft transition duration-300 ease-out;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-1 hover:shadow-lift;
+  }
+
+  .glass {
+    @apply border border-white/60 bg-white/70 backdrop-blur;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .mask-fade-x {
+    mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+  }
+}
+
+/* MDX content styles — lightweight replacement for @tailwindcss/typography */
+.mdx {
+  @apply text-ink-700;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.mdx > * + * {
+  @apply mt-5;
+}
+
+.mdx h1,
+.mdx h2,
+.mdx h3,
+.mdx h4 {
+  @apply font-display font-semibold tracking-tight text-ink-900;
+}
+
+.mdx h2 {
+  @apply mt-10 text-2xl sm:text-3xl;
+}
+
+.mdx h3 {
+  @apply mt-8 text-xl sm:text-2xl;
+}
+
+.mdx h4 {
+  @apply mt-6 text-lg;
+}
+
+.mdx p {
+  @apply text-ink-700;
+}
+
+.mdx a {
+  @apply text-brand-700 underline underline-offset-2 hover:text-brand-800;
+}
+
+.mdx strong {
+  @apply font-semibold text-ink-900;
+}
+
+.mdx ul,
+.mdx ol {
+  @apply my-4 space-y-2 pl-5;
+}
+
+.mdx ul {
+  list-style-type: disc;
+}
+
+.mdx ol {
+  list-style-type: decimal;
+}
+
+.mdx li::marker {
+  color: rgb(var(--gf-muted));
+}
+
+.mdx blockquote {
+  @apply border-l-4 border-brand-200 bg-brand-50/40 px-4 py-2 text-ink-800;
+}
+
+.mdx code {
+  @apply rounded bg-ink-50 px-1 py-0.5 text-[0.95em] text-ink-800;
+}
+
+.mdx pre {
+  @apply overflow-x-auto rounded-xl bg-ink-900 p-4 text-sm text-white;
+}
+
+.mdx pre code {
+  @apply bg-transparent p-0 text-white;
+}
+
+.mdx hr {
+  @apply my-10 border-ink-100;
+}

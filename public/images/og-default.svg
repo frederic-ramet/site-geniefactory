@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef6ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(80, 220)">
+    <rect width="56" height="56" rx="14" fill="#111827"/>
+    <path d="M18 36V20h14M18 28h10" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="80" y="40" fill="#111827" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="36" font-weight="700">Genie Factory</text>
+  </g>
+  <text x="80" y="360" fill="#111827" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="58" font-weight="700">La plate-forme IA pour</text>
+  <text x="80" y="425" fill="#111827" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="58" font-weight="700">industrialiser vos applications</text>
+  <text x="80" y="520" fill="#4c6a97" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="26" font-weight="500">Du besoin au prototype testable en moins de 24h.</text>
+</svg>
