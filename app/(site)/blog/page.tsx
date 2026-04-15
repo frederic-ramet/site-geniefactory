@@ -1,22 +1,26 @@
 import type { Metadata } from 'next';
 import { PageHeader } from '@/components/ui/PageHeader';
 import { BlogCard } from '@/components/ui/BlogCard';
+import { JsonLd } from '@/components/ui/JsonLd';
 import { getBlogPosts } from '@/lib/content';
+import { getSeoFor } from '@/lib/data';
+import { collectionPageSchema } from '@/lib/schema';
+import { siteConfig } from '@/lib/site';
 
-export const metadata: Metadata = {
-  title: 'Blog',
-  description:
-    "Méthode, retours terrain et analyses sur l'industrialisation de l'IA dans l'entreprise.",
-};
+export function generateMetadata(): Metadata {
+  const seo = getSeoFor('blog');
+  return { title: seo.title, description: seo.description };
+}
 
 export default function BlogIndexPage() {
+  const seo = getSeoFor('blog');
   const posts = getBlogPosts();
   return (
     <>
       <PageHeader
         eyebrow="Blog"
-        title="Industrialiser l'IA, en pratique"
-        description="Des articles courts et opérationnels issus de notre travail avec nos clients."
+        title={seo.h1 ?? seo.title}
+        description={seo.description}
       />
       <section className="container py-16 sm:py-20">
         {posts.length === 0 ? (
@@ -31,6 +35,13 @@ export default function BlogIndexPage() {
           </div>
         )}
       </section>
+      <JsonLd
+        data={collectionPageSchema(
+          seo.h1 ?? seo.title,
+          seo.description,
+          `${siteConfig.url}/blog`,
+        )}
+      />
     </>
   );
 }

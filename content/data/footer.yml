@@ -1,0 +1,45 @@
+tagline: >-
+  La plateforme de transformation agentique pour les PME et ETI. Déployez des
+  agents IA en production — avec gouvernance, propriété du code et conformité
+  AI Act.
+
+address:
+  street: 12 avenue des Prés
+  postalCode: "78180"
+  city: Montigny-le-Bretonneux
+  country: France
+
+sections:
+  - title: Produit
+    items:
+      - label: Comment ça marche
+        href: /#how-it-works
+      - label: Fonctionnalités
+        href: /#features
+      - label: Gouvernance IA
+        href: /solutions/gouvernance-ia
+      - label: Programme Adopters
+        href: /programme-adopters
+
+  - title: Ressources
+    items:
+      - label: Blog
+        href: /blog
+      - label: Cas d'usages
+        href: /portfolio
+      - label: À propos
+        href: /aboutus
+
+  - title: Contact
+    items:
+      - label: contact@geniefactory.fr
+        href: mailto:contact@geniefactory.fr
+      - label: LinkedIn
+        href: https://www.linkedin.com/company/geniefactory/
+        external: true
+      - label: Demander une démo
+        href: https://calendar.google.com/calendar/u/0/appointments/schedules/placeholder
+        external: true
+
+legal: >-
+  © {year} Genie Factory. Tous droits réservés.

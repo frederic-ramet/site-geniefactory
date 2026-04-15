@@ -8,25 +8,52 @@ import { Testimonials } from '@/components/sections/Testimonials';
 import { FAQ } from '@/components/sections/FAQ';
 import { BlogPreview } from '@/components/sections/BlogPreview';
 import { FinalCTA } from '@/components/sections/FinalCTA';
+import { JsonLd } from '@/components/ui/JsonLd';
+import {
+  getSeoFor,
+  getSteps,
+  getFeatures,
+  getFaq,
+  getTestimonials,
+} from '@/lib/data';
+import { getUseCaseCards } from '@/lib/content';
+import { faqPageSchema } from '@/lib/schema';
 
-export const metadata: Metadata = {
-  title: 'La plate-forme IA pour industrialiser vos applications',
-  description:
-    "Du besoin métier au prototype IA testable en moins de 24h. Spécifications, génération, évaluation et marketplace de composants IA.",
-};
+export function generateMetadata(): Metadata {
+  const seo = getSeoFor('home');
+  return {
+    title: seo.title,
+    description: seo.description,
+    openGraph: {
+      title: seo.title,
+      description: seo.description,
+    },
+  };
+}
+
+const HERO_SUBTITLE =
+  'Transformez vos processus métier en déployant des agents IA en production — avec gouvernance, propriété du code et conformité AI Act.';
 
 export default function HomePage() {
+  const seo = getSeoFor('home');
+  const steps = getSteps();
+  const features = getFeatures();
+  const faq = getFaq();
+  const testimonials = getTestimonials();
+  const useCases = getUseCaseCards();
+
   return (
     <>
-      <Hero />
-      <HowItWorks />
-      <Features />
-      <UseCasesCarousel />
+      <Hero h1={seo.h1 ?? seo.title} subtitle={HERO_SUBTITLE} />
+      <HowItWorks steps={steps} />
+      <Features features={features} />
+      <UseCasesCarousel items={useCases} />
       <VideoSection />
-      <Testimonials />
-      <FAQ />
+      <Testimonials items={testimonials} />
+      <FAQ items={faq} />
       <BlogPreview />
       <FinalCTA />
+      <JsonLd data={faqPageSchema(faq)} />
     </>
   );
 }

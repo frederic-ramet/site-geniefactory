@@ -6,7 +6,12 @@ import { siteConfig } from '@/lib/site';
 import { PlaceholderImage } from '@/components/ui/PlaceholderImage';
 import { ChatDemo } from './ChatDemo';
 
-export function Hero() {
+type Props = {
+  h1: string;
+  subtitle: string;
+};
+
+export function Hero({ h1, subtitle }: Props) {
   return (
     <section className="relative overflow-hidden pt-14 sm:pt-20">
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -23,9 +28,9 @@ export function Hero() {
               transition={{ duration: 0.5, ease: 'easeOut' }}
               className="eyebrow"
             >
-              Plate-forme IA
+              Transformation agentique
               <span className="h-1 w-1 rounded-full bg-ink-400" />
-              Industrialisation
+              PME &amp; ETI
             </motion.span>
 
             <motion.h1
@@ -34,12 +39,7 @@ export function Hero() {
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
               className="mt-5 font-display text-4xl font-semibold leading-[1.05] tracking-tight text-ink-900 sm:text-5xl md:text-6xl"
             >
-              La plate-forme IA pour{' '}
-              <span className="relative inline-block">
-                <span className="relative z-10">industrialiser</span>
-                <span className="absolute inset-x-0 bottom-1 -z-0 h-3 rounded bg-brand-200/70" />
-              </span>{' '}
-              vos applications
+              {h1}
             </motion.h1>
 
             <motion.p
@@ -48,9 +48,7 @@ export function Hero() {
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.15 }}
               className="mt-6 max-w-xl text-lg leading-relaxed text-ink-600"
             >
-              Transformez vos besoins métier en prototypes testables en moins de 24h.
-              Spécifications intelligentes, génération de code et évaluation —
-              réunis dans une seule plate-forme.
+              {subtitle}
             </motion.p>
 
             <motion.div
@@ -79,8 +77,8 @@ export function Hero() {
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
               className="mt-10 grid grid-cols-3 gap-6 border-t border-ink-100 pt-6 text-sm"
             >
-              <Stat value="24h" label="pour un POC" />
-              <Stat value="10×" label="cycles accélérés" />
+              <Stat value="Agents IA" label="en production" />
+              <Stat value="Gouvernance" label="intégrée nativement" />
               <Stat value="AI Act" label="conformité by design" />
             </motion.dl>
           </div>

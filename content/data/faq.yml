@@ -1,0 +1,45 @@
+- question: "Que se passe-t-il si le POC est concluant ?"
+  answer: >-
+    Le prototype passe directement en production sur la plateforme : durcissement,
+    intégration aux systèmes existants, mise à disposition des équipes métier.
+    Vous gardez la propriété du code généré et pouvez sortir de la plateforme
+    sans lock-in technique.
+
+- question: "Comment justifier le ROI d'un POC IA ?"
+  answer: >-
+    Chaque POC produit des KPIs suivis en continu dès la phase d'évaluation.
+    Vous disposez d'indicateurs d'impact — temps gagné, taux d'adoption, qualité
+    perçue, coût d'ownership — pour arbitrer en toute transparence entre POC,
+    industrialisation et arrêt.
+
+- question: "Combien de temps pour obtenir un premier prototype testable ?"
+  answer: >-
+    Comptez quelques jours entre le brief initial et un prototype exploitable
+    par les équipes métier, contre plusieurs mois en approche classique. Le
+    délai réel dépend de la complexité du cas d'usage et des intégrations
+    nécessaires.
+
+- question: "La solution est-elle conforme à l'AI Act ?"
+  answer: >-
+    Oui. La plateforme intègre nativement la classification par niveau de risque,
+    la traçabilité des décisions modèles, le contrôle d'accès (RBAC) et la
+    journalisation d'audit. La conformité AI Act n'est pas un post-traitement —
+    elle est intégrée à chaque livrable.
+
+- question: "Faut-il une équipe technique pour utiliser GenieFactory ?"
+  answer: >-
+    Non. GenieFactory est pensée pour des équipes métier accompagnées d'un
+    référent produit. Un appui technique peut être mobilisé pour les intégrations
+    avancées ou les mises en production à fort enjeu.
+
+- question: "Peut-on intégrer nos systèmes existants ?"
+  answer: >-
+    Oui — ERP, GED, API internes, workflows. Les connecteurs se configurent
+    depuis l'interface pour la majorité des cas standards ; une extension sur
+    mesure est possible via le SDK pour les systèmes propriétaires.
+
+- question: "Quels types de cas d'usage sont couverts ?"
+  answer: >-
+    Automatisation documentaire, assistants métier, copilotes, RAG sur corpus
+    internes, analyse augmentée, orchestration multi-agents. Voir la section
+    Cas d'usage pour des exemples concrets en production.

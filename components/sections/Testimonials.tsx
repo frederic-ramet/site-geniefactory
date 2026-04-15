@@ -1,20 +1,29 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { Section } from '@/components/ui/Section';
-import { testimonials } from '@/lib/testimonials';
+import { siteConfig } from '@/lib/site';
+import type { Testimonial } from '@/lib/data';
 
-export function Testimonials() {
+export function Testimonials({ items }: { items: Testimonial[] }) {
+  // Hard filter — never render a testimonial without explicit public consent.
+  const publicItems = items.filter((t) => t.usable_publicly === true);
+
+  if (publicItems.length === 0) {
+    return <TestimonialsWaitingState />;
+  }
+
   return (
     <Section
       eyebrow="Témoignages"
       title="Ce qu'en disent les équipes qui nous font confiance"
-      subtitle="Des retours terrain, loin du buzz, sur ce que change Genie Factory au quotidien."
+      subtitle="Des retours terrain, loin du buzz, sur ce que change GenieFactory au quotidien."
     >
       <div className="grid gap-6 md:grid-cols-2">
-        {testimonials.map((t, i) => (
+        {publicItems.map((t, i) => (
           <motion.figure
-            key={t.name}
+            key={`${t.company}-${t.name}`}
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
@@ -56,6 +65,37 @@ export function Testimonials() {
             </figcaption>
           </motion.figure>
         ))}
+      </div>
+    </Section>
+  );
+}
+
+/**
+ * Rendered when no testimonial is cleared for public display. Keeps the layout
+ * rhythm of the page without publishing anything unauthorized.
+ */
+function TestimonialsWaitingState() {
+  return (
+    <Section eyebrow="Témoignages" title="Retours clients — bientôt publiés">
+      <div className="mx-auto max-w-2xl rounded-3xl border border-dashed border-ink-200 bg-ink-50/40 p-10 text-center">
+        <p className="text-ink-700">
+          Nos premiers clients préparent leurs retours publics. En attendant,
+          nous partageons volontiers des références sur demande — dans le cadre
+          d'un échange dédié.
+        </p>
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <Link
+            href={siteConfig.demoUrl}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="btn-primary"
+          >
+            Échanger avec l'équipe
+          </Link>
+          <Link href="/portfolio" className="btn-secondary">
+            Voir les cas d'usage
+          </Link>
+        </div>
       </div>
     </Section>
   );

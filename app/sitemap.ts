@@ -11,18 +11,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/portfolio`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${base}/aboutus`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${base}/solutions/gouvernance-ia`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${base}/programme-adopters`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const blogRoutes: MetadataRoute.Sitemap = getBlogPosts().map((p) => ({
     url: `${base}/blog/${p.slug}`,
-    lastModified: new Date(p.frontmatter.date),
+    lastModified: new Date(p.frontmatter.updated ?? p.frontmatter.date),
     changeFrequency: 'monthly',
     priority: 0.6,
   }));
 
   const useCaseRoutes: MetadataRoute.Sitemap = getUseCases().map((u) => ({
     url: `${base}/use-cases/${u.slug}`,
-    lastModified: new Date(u.frontmatter.date),
+    lastModified: new Date(u.frontmatter.updated ?? u.frontmatter.date),
     changeFrequency: 'monthly',
     priority: 0.6,
   }));

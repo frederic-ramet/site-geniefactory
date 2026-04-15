@@ -4,10 +4,11 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import clsx from 'clsx';
-import { primaryNav, siteConfig } from '@/lib/site';
+import { siteConfig } from '@/lib/site';
 import { Logo } from './Logo';
+import type { Nav } from '@/lib/data';
 
-export function Navbar() {
+export function Navbar({ nav }: { nav: Nav }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -49,7 +50,7 @@ export function Navbar() {
           aria-label="Navigation principale"
           className="hidden items-center gap-1 md:flex"
         >
-          {primaryNav.map((item) => (
+          {nav.primary.map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -97,7 +98,7 @@ export function Navbar() {
                 aria-label="Navigation mobile"
                 className="container flex flex-col gap-1 py-4"
               >
-                {primaryNav.map((item) => (
+                {nav.primary.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}

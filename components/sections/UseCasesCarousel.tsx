@@ -6,9 +6,17 @@ import AutoScroll from 'embla-carousel-auto-scroll';
 import { useCallback, useEffect, useState } from 'react';
 import { Section } from '@/components/ui/Section';
 import { PlaceholderImage } from '@/components/ui/PlaceholderImage';
-import { useCases } from '@/lib/use-cases';
 
-export function UseCasesCarousel() {
+export type UseCaseCard = {
+  slug: string;
+  title: string;
+  client: string;
+  category: string;
+  excerpt: string;
+  image?: string;
+};
+
+export function UseCasesCarousel({ items }: { items: UseCaseCard[] }) {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
@@ -16,7 +24,14 @@ export function UseCasesCarousel() {
       align: 'start',
       containScroll: false,
     },
-    [AutoScroll({ playOnInit: true, speed: 0.8, stopOnInteraction: false, stopOnMouseEnter: true })],
+    [
+      AutoScroll({
+        playOnInit: true,
+        speed: 0.8,
+        stopOnInteraction: false,
+        stopOnMouseEnter: true,
+      }),
+    ],
   );
   const [canPrev, setCanPrev] = useState(false);
   const [canNext, setCanNext] = useState(false);
@@ -37,18 +52,20 @@ export function UseCasesCarousel() {
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
+  if (items.length === 0) return null;
+
   return (
     <Section
       id="use-cases"
       eyebrow="Cas d'usage"
-      title="Ils ont industrialisé leurs projets IA"
-      subtitle="Des cas concrets, en production, couvrant l'industrie, la finance, les services et le secteur public."
+      title="Ils industrialisent leurs agents IA en production"
+      subtitle="Des cas concrets, couvrant industrie, finance, services et secteur public."
       bleed
     >
       <div className="relative">
         <div className="mask-fade-x overflow-hidden" ref={emblaRef}>
           <div className="flex gap-5 px-4 sm:px-6 lg:px-8">
-            {useCases.concat(useCases).map((uc, i) => (
+            {items.concat(items).map((uc, i) => (
               <article
                 key={`${uc.slug}-${i}`}
                 className="card card-hover group flex min-w-[280px] max-w-[320px] flex-col gap-4 sm:min-w-[320px]"

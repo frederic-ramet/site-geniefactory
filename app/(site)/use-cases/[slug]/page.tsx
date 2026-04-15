@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { formatDate, getUseCase, getUseCases } from '@/lib/content';
 import { PlaceholderImage } from '@/components/ui/PlaceholderImage';
+import { JsonLd } from '@/components/ui/JsonLd';
+import { articleSchemaForUseCase } from '@/lib/schema';
 
 type Params = { params: { slug: string } };
 
@@ -17,13 +19,15 @@ export function generateMetadata({ params }: Params): Metadata {
   return {
     title: uc.frontmatter.title,
     description: uc.frontmatter.description,
+    alternates: { canonical: `/use-cases/${uc.slug}` },
   };
 }
 
 export default function UseCasePage({ params }: Params) {
   const uc = getUseCase(params.slug);
   if (!uc) notFound();
-  const { title, description, client, category, date, image } = uc.frontmatter;
+  const { title, description, client, category, date, updated, image } =
+    uc.frontmatter;
 
   return (
     <article className="pb-20">
@@ -35,12 +39,18 @@ export default function UseCasePage({ params }: Params) {
           >
             ← Tous les cas d'usage
           </Link>
-          <div className="mt-6 flex items-center gap-3 text-xs uppercase tracking-widest text-ink-500">
+          <div className="mt-6 flex flex-wrap items-center gap-3 text-xs uppercase tracking-widest text-ink-500">
             <span>{client}</span>
             <span aria-hidden>·</span>
             <span>{category}</span>
             <span aria-hidden>·</span>
             <time dateTime={date}>{formatDate(date)}</time>
+            {updated && updated !== date && (
+              <>
+                <span aria-hidden>·</span>
+                <span>mis à jour le {formatDate(updated)}</span>
+              </>
+            )}
           </div>
           <h1 className="mt-3 max-w-3xl font-display text-3xl font-semibold leading-tight tracking-tight text-ink-900 sm:text-5xl">
             {title}
@@ -66,6 +76,7 @@ export default function UseCasePage({ params }: Params) {
           </div>
         </div>
       </div>
+      <JsonLd data={articleSchemaForUseCase(uc.slug, uc.frontmatter)} />
     </article>
   );
 }
