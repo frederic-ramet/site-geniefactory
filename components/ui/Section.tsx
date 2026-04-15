@@ -32,10 +32,10 @@ export function Section({
       <div className={clsx(bleed ? '' : 'container')}>
         {(eyebrow || title || subtitle) && (
           <motion.header
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 28 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-60px' }}
-            transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className={clsx(
               'mb-10 flex flex-col gap-4 md:mb-14',
               align === 'center' && 'items-center text-center',
