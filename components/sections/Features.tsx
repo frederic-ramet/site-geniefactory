@@ -59,7 +59,7 @@ function FeatureRow({
         </p>
       </div>
       <div className="relative">
-        <div className="rounded-3xl border border-ink-100 bg-white p-3 shadow-soft">
+        <div className="rounded-3xl border border-ink-100 bg-white p-3 shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lift">
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-ink-50">
             {feature.image && (
               <Image

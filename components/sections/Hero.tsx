@@ -37,7 +37,7 @@ export function Hero({ h1, subtitle }: Props) {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
-              className="mt-5 font-display text-5xl font-bold leading-[1.05] tracking-tight text-ink-900 sm:text-6xl lg:text-7xl"
+              className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-tight text-ink-900 sm:text-5xl md:text-6xl lg:text-7xl"
               dangerouslySetInnerHTML={{
                 __html: h1.replace(
                   'agentique',
