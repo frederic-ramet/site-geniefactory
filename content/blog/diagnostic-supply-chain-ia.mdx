@@ -1,26 +1,74 @@
 ---
-title: "Diagnostic supply chain IA pour ETI industrielle"
+title: "Diagnostic supply chain IA : comment une ETI industrielle identifie 5 à 10M€ de fuites de valeur"
 slug: diagnostic-supply-chain-ia
-description: >-
-  Comment conduire un diagnostic supply chain augmenté par IA dans une ETI
-  industrielle : cartographie, priorisation, feuille de route.
-date: 2026-01-15
-updated: 2026-01-15
+description: "Une ETI industrielle de 115M€ de CA identifie 5 à 10M€ de fuites de valeur en quelques semaines grâce à un diagnostic supply chain combinant agents IA et Knowledge Graph."
 author:
-  name: "Frédéric Ramet"
-  role: "Co-fondateur, Genie Factory"
-  bio: "Co-fondateur de GenieFactory."
-  linkedin: "https://www.linkedin.com/in/"
-category: Cas d'usage
-tags:
-  - supply chain
-  - ETI
-image: /images/blog/diagnostic-supply-chain-ia.webp
-schema: Article
-draft: true
+  name: Frédéric Ramet
+  role: Co-fondateur, GenieFactory
+  linkedin: https://www.linkedin.com/in/fredericramet/
+date: 2026-04-15
+draft: false
+priority: P2
+keywords: [diagnostic supply chain IA, optimisation supply chain ETI, Knowledge Graph supply chain, fuites de valeur industrie, IA industrie manufacturière]
+image: /public/images/blog/diagnostic-supply-chain-ia.webp
 ---
 
-# Diagnostic supply chain IA
+# Diagnostic supply chain IA : comment une ETI industrielle identifie 5 à 10M€ de fuites de valeur
 
-<!-- Prompt cible : "diagnostic supply chain IA ETI industrielle" -->
-<!-- Contenu à fournir — voir content-brief.md -->
+En combinant des entretiens métier structurés, l'extraction de données ERP, et la construction d'un Knowledge Graph des flux, un diagnostic de quelques semaines a identifié 5 fuites de valeur majeures dans une ETI de 115M€ de CA — dont 2 à 4M€ récupérables en quick wins sous 6 mois.
+
+## Le contexte : une ETI industrielle sous pression
+
+Une ETI française, fabrication industrielle, 115M€ de CA, 2 000 collaborateurs. Supply chain complexe : délais longs, fournisseurs multiples, mix produits standard (70-80%) et sur-mesure (20-30%).
+
+L'ERP SAP S/4HANA a été migré récemment. Les modules sont en place (FI/CO, SD, MM, PP, PM). Mais les processus n'ont pas suivi. Les paramètres de planification n'ont pas été recalibrés. Le marché du secteur est en crise : -17,6% d'immatriculations en 2024. Chaque point de BFR optimisé compte.
+
+## Comment s'est déroulé le diagnostic ?
+
+Le diagnostic a suivi les deux premières étapes du framework [ICPC](/blog/framework-identifier-cadrer-produire-capitaliser) : Identifier et Cadrer.
+
+**Entretiens métier structurés.** 4 entretiens avec les équipes ADV, achats, production et logistique, guidés par la plateforme GenieFactory. Objectif : capturer le travail réel — pas les processus déclarés. L'écart entre les deux est systématiquement la source des fuites de valeur.
+
+**Extraction et croisement des données SAP.** 8 exports SAP nettoyés et modélisés : articles, stocks, mouvements, commandes, ordres de fabrication, nomenclatures, comptabilité. Un modèle pivot "planning-ready" construit à partir des données réelles.
+
+**Construction du Knowledge Graph.** Les 4 entretiens sont transformés en 4 KG processus, fusionnés en un KG unifié. Ce graphe relie les flux — du devis à la production à la livraison — avec les contraintes métier réelles, pas les processus théoriques de l'ERP.
+
+**Scorecard enrichi.** 16 KPIs calculés sur la chaîne PLAN→BUY→MAKE→STOCK→DELIVER. Chaque KPI est enrichi avec les causes racines extraites du Knowledge Graph. Le scorecard passe de "vous avez un problème" à "voici pourquoi et comment le résoudre".
+
+## Quelles fuites de valeur ont été identifiées ?
+
+Cinq fuites de valeur majeures, avec des scénarios chiffrés pour chacune :
+
+**1. Surstock matières premières structurel.** Les délais théoriques dans l'ERP ne correspondent pas aux délais réels des fournisseurs. Résultat : l'entreprise stocke des matières premières plus longtemps que nécessaire. Impact : 3 à 5M€ de BFR immobilisé, sur 24,3M€ de matières premières au total.
+
+**2. En-cours de production excessif (WIP).** Des ordres de fabrication sont lancés sans que tous les composants soient disponibles ("pas de full kit"). Les goulots se multiplient. Impact : 1 à 3M€.
+
+**3. Nervosité MRP.** Les paramètres de planification (stocks de sécurité, délais, tailles de lot) n'ont pas été recalibrés depuis la migration SAP. Les stocks de sécurité sont des "chiffres ronds inchangés depuis 2 ans". Résultat : une avalanche de messages "Reschedule In/Out" contradictoires que personne ne traite. Impact indirect élevé.
+
+**4. Transport premium compensatoire.** Des livraisons express pour rattraper les retards structurels. L'urgence est devenue le mode de fonctionnement normal. Impact : 200 à 500K€/an.
+
+**5. Stocks morts et à rotation lente.** Du capital qui dort. Impact : 500K€ à 1M€.
+
+Impact total estimé : **5 à 10M€**, dont 2 à 4M€ récupérables en quick wins sous 3 à 6 mois.
+
+## Pourquoi l'IA fait la différence dans ce type de diagnostic ?
+
+Trois raisons concrètes :
+
+**Le croisement données × savoir métier.** Un consultant classique analyse soit les données ERP, soit les entretiens métier. Le Knowledge Graph croise les deux. Une incohérence entre le délai déclaré par les achats et le délai réel dans les données SAP apparaît automatiquement.
+
+**La vitesse.** Ce qui aurait pris des mois en mode traditionnel (audits terrain, extraction manuelle, consolidation) est réalisé en semaines. Les agents IA font le travail de croisement, l'expert valide.
+
+**La capitalisation.** Tout ce qui est appris — ontologies métier, patterns de diagnostic, règles de scoring — est encodé dans le Knowledge Graph. Le prochain diagnostic industriel (même secteur ou secteur adjacent) partira de cette base. C'est le "C" de Capitaliser dans le framework [ICPC](/blog/framework-identifier-cadrer-produire-capitaliser).
+
+## Ce type de diagnostic est-il applicable à mon entreprise ?
+
+Si vous êtes une ETI industrielle avec un ERP (SAP, Sage, Oracle) et une supply chain complexe, oui. Le modèle est conçu pour être reproductible. Les briques techniques (connecteur ERP, pipeline d'extraction, moteur Knowledge Graph) sont les mêmes — ce qui change, c'est l'ontologie métier de votre secteur.
+
+GenieFactory travaille avec des partenaires verticaux spécialisés qui apportent l'expertise sectorielle. La plateforme fournit l'infrastructure IA. Le client reste propriétaire de ses données et de son Knowledge Graph.
+
+**[Lancer un diagnostic supply chain →](/contact)**
+
+---
+
+*Article lié : [Qu'est-ce que la transformation agentique ?](/blog/transformation-agentique)*

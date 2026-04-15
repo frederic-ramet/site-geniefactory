@@ -1,26 +1,81 @@
 ---
 title: "Comment passer d'un POC IA à la production ?"
 slug: passer-poc-ia-production
-description: >-
-  Méthode et pièges à éviter pour industrialiser un POC IA en production
-  dans une PME ou ETI — gouvernance, intégration, conduite du changement.
-date: 2026-03-01
-updated: 2026-03-01
+description: "80% des POC IA ne passent jamais en production. Voici les 5 raisons principales et la méthode pour déployer une application IA qui dure — pas une démo qui impressionne."
 author:
-  name: "Frédéric Ramet"
-  role: "Co-fondateur, Genie Factory"
-  bio: "Co-fondateur de GenieFactory."
-  linkedin: "https://www.linkedin.com/in/"
-category: Méthode
-tags:
-  - POC
-  - industrialisation
-image: /images/blog/passer-poc-ia-production.webp
-schema: Article
-draft: true
+  name: Frédéric Ramet
+  role: Co-fondateur, GenieFactory
+  linkedin: https://www.linkedin.com/in/fredericramet/
+date: 2026-04-15
+draft: false
+priority: P1
+keywords: [POC IA production, déployer IA entreprise, industrialisation IA, POC IA qui échoue, mise en production IA]
+image: /public/images/blog/passer-poc-ia-production.webp
 ---
 
-# Du POC à la production
+# Comment passer d'un POC IA à la production ?
 
-<!-- Prompt cible : "Comment passer d'un POC IA à la production ?" -->
-<!-- Contenu à fournir — voir content-brief.md -->
+En cadrant le besoin métier avant de toucher à l'outil, en déployant en conditions réelles dès le départ, et en intégrant la validation humaine dans l'architecture. Un POC qui marche en démo et échoue en atelier n'est pas un POC raté — c'est un processus raté.
+
+## Pourquoi la plupart des POC IA ne passent jamais en production ?
+
+Parce qu'ils sont conçus pour impressionner, pas pour fonctionner. Plus de 80% des projets Data et IA échouent. Sur les 200 projets IA B2B étudiés en France, les causes sont toujours les mêmes.
+
+38% échouent à cause d'un mauvais choix de cas d'usage. On a tenté d'automatiser des tâches qui nécessitaient un jugement expert. Le POC fonctionne sur des cas simples, mais les edge cases du terrain le tuent.
+
+19% échouent par "tool-first thinking". On a choisi l'outil (ChatGPT, Copilot, une plateforme no-code) avant de définir le problème. Le POC démontre la capacité de l'outil, pas la valeur métier.
+
+24% échouent faute de sponsor exécutif. Un manager intermédiaire lance le POC sans alignement avec la direction. Six mois plus tard, le budget est coupé.
+
+12% échouent par absence de conduite du changement. Le POC est déployé sans explication — résultat : 8% d'adoption.
+
+## Quelle est la différence entre un POC et un projet de production ?
+
+Un POC prouve qu'une technologie fonctionne. Un projet de production prouve qu'un processus métier est amélioré. Ce n'est pas la même chose.
+
+| | POC classique | Projet de production |
+|---|---|---|
+| Objectif | Montrer que ça marche | Résoudre un problème métier |
+| Données | Échantillon propre | Données réelles, sales, incomplètes |
+| Utilisateurs | L'équipe projet | Les vrais utilisateurs terrain |
+| Durée de vie | 3 mois puis oublié | En production continue |
+| Validation | Démo au comité | Adoption par les équipes |
+| ROI | Promis | Mesuré |
+
+Le passage en production ne se fait pas "après" le POC. Il se prépare "pendant" — en cadrant le besoin, en impliquant les utilisateurs, et en architecturant pour la durée.
+
+## Comment cadrer un projet IA pour qu'il passe en production ?
+
+Avec le framework [ICPC](/blog/framework-identifier-cadrer-produire-capitaliser) : Identifier, Cadrer, Produire, Capitaliser.
+
+**Identifier le bon cas d'usage.** Pas le plus ambitieux — le plus démontrable. Les quick wins (content, lead scoring, document analysis) ont un breakeven plus rapide (4-6 mois) et construisent la crédibilité pour scaler ensuite. Le ROI doit tenir en une phrase.
+
+**Cadrer avant de coder.** Aligner métier, tech et direction. C'est la phase que tout le monde saute — et la cause n°1 d'échec. Les projets dont le cadrage implique les trois parties ont un taux d'échec de 5% quand ils sont déployés en moins de 6 semaines, contre 31% au-delà de 24 semaines.
+
+**Intégrer le human-in-the-loop dès l'architecture.** Les systèmes avec validation humaine ont 4,3× moins d'incidents critiques (2,9 vs 12,4 pour 100 utilisateurs/an). Le surcoût humain (moins de 2h/jour) est largement compensé par l'évitement d'erreurs coûteuses. Satisfaction client : 96% avec HitL vs 67% sans.
+
+**Former les équipes.** 2,4× plus de ROI quand on investit 25%+ du budget en formation. Le gap entre "utiliser l'IA récréativement" et "utiliser l'IA productivement" est substantiel. 89% d'adoption à M3 contre 31% sans formation.
+
+## Comment mesurer si un projet IA est prêt pour la production ?
+
+Quatre critères avant de passer en prod :
+
+L'adoption est réelle. Les vrais utilisateurs (pas l'équipe projet) utilisent l'outil au quotidien. Cible : 50%+ d'adoption à M3.
+
+Le ROI est mesurable. Temps gagné, coûts évités, revenus additionnels — au moins un indicateur est documenté et suivi.
+
+Les erreurs sont gérées. Un processus de correction existe. L'humain peut intervenir. Les incidents sont tracés et corrigés.
+
+La connaissance est capitalisée. Ce qui a été appris est encodé quelque part (Knowledge Graph, documentation, patterns réutilisables) — pas seulement dans la tête de l'équipe projet.
+
+## Quel budget prévoir pour passer un POC IA en production ?
+
+Contre-intuitivement, les petits budgets surperforment. Les projets IA à moins de 10K€ ont un ROI médian de +245%, contre +85% pour les projets à plus de 100K€. La corrélation inversée est statistiquement significative.
+
+La stratégie optimale : commencer par un projet cadré à moins de 20K€, prouver la valeur en 6 semaines, puis scaler. Chez GenieFactory, nos projets sont calibrés dans cette fourchette — [Hackathon](/solutions) à 18K€, déploiement en semaines, ROI formulé avant le démarrage.
+
+**[Transformer votre POC en application de production →](/contact)**
+
+---
+
+*Article lié : [ROI d'un POC IA : comment le calculer](/blog/roi-poc-ia)*
