@@ -11,6 +11,25 @@ draft: false
 priority: P1
 keywords: [conformité AI Act 2026, AI Act PME ETI, réglementation IA entreprise, gouvernance IA, documentation IA]
 image: /images/blog/conformite-ai-act-2026.webp
+faq:
+  - question: "Qu'est-ce que l'AI Act et qui doit s'y conformer ?"
+    answer: "L'AI Act est le règlement européen sur l'intelligence artificielle, en vigueur depuis 2025. Il s'applique à toute organisation qui développe, déploie ou utilise un système d'IA sur le marché européen — y compris les PME et ETI. Il classe les systèmes IA par niveau de risque (interdit, haut risque, risque limité, risque minimal) et impose des obligations graduées selon le classement."
+  - question: "Quelles obligations concrètes pour une application IA d'entreprise ?"
+    answer: "Pour la plupart des applications IA métier (catégorie risque limité ou haut risque), les obligations clés sont : documenter le système, tracer les décisions, garder une supervision humaine sur les actions critiques, informer les utilisateurs qu'ils interagissent avec une IA, évaluer les risques, et conserver des logs d'audit. Une application RH ou de scoring bascule en haut risque avec des obligations renforcées."
+  - question: "Comment documenter une application IA pour l'AI Act ?"
+    answer: "Il faut produire une fiche système qui décrit : finalité, données d'entraînement, architecture, métriques de performance, limites connues, mesures de mitigation des biais, supervision humaine prévue. Cette documentation doit être tenue à jour et accessible en cas d'audit. Chez GenieFactory, cette fiche est générée automatiquement pour chaque agent IA déployé."
+  - question: "Qu'est-ce que la traçabilité AI Act et comment l'assurer ?"
+    answer: "La traçabilité consiste à enregistrer chaque décision ou action d'un agent IA avec contexte (entrée, raisonnement, sortie, utilisateur, horodatage). Elle permet de reconstituer une décision a posteriori en cas d'incident ou d'audit. Techniquement : logs structurés horodatés, stockage inaltérable, et interface de consultation par les utilisateurs métier et les auditeurs."
+  - question: "Quel est le niveau de risque de mes applications IA ?"
+    answer: "La plupart des applications IA B2B (automatisation documentaire, assistants métier, rapprochement bancaire) sont en risque limité : obligations documentaires mais pas de contrôle préalable. Les applications qui impactent des personnes (RH, scoring crédit, surveillance, éducation) sont en haut risque : évaluation de conformité obligatoire avant mise sur le marché. Les usages comme la notation sociale ou la manipulation comportementale sont interdits."
+  - question: "Faut-il un DPO ou un responsable AI Act dédié ?"
+    answer: "L'AI Act ne crée pas de fonction obligatoire équivalente au DPO du RGPD, mais une gouvernance claire est attendue. En pratique : nommer un référent AI Act (souvent DPO élargi ou RSSI), tenir un registre des systèmes IA, revoir la conformité annuellement. Pour une ETI avec plusieurs systèmes IA, une fonction dédiée devient pertinente."
+  - question: "Quelles sanctions en cas de non-conformité AI Act ?"
+    answer: "Les sanctions sont calquées sur le RGPD, en plus sévère : jusqu'à 35M€ ou 7% du chiffre d'affaires mondial pour les pratiques interdites, 15M€ ou 3% pour le non-respect des obligations des systèmes à haut risque, 7,5M€ ou 1% pour des informations incorrectes fournies aux autorités. Les autorités de marché nationales (en France : DGCCRF et CNIL) sont compétentes."
+  - question: "Comment GenieFactory aide à la conformité AI Act ?"
+    answer: "GenieFactory intègre nativement les exigences AI Act dans la plateforme : documentation auto-générée pour chaque agent, logs d'audit inaltérables, supervision humaine configurable par workflow, RBAC granulaire, et fiches système exportables pour les auditeurs. Le client garde la propriété complète des logs et de la documentation, stockés sur son infrastructure."
+  - question: "L'AI Act s'applique-t-il aux modèles comme Claude, GPT-4 ou Mistral ?"
+    answer: "Oui — les modèles de fondation (LLM) sont couverts par des obligations spécifiques : publication d'une documentation technique, respect du droit d'auteur, transparence sur les données d'entraînement. Ces obligations reposent sur les éditeurs (Anthropic, OpenAI, Mistral), mais l'entreprise qui intègre ces modèles dans une application reste responsable de la conformité du système final."
 ---
 
 # Comment être conforme AI Act pour mes applications IA en 2026 ?

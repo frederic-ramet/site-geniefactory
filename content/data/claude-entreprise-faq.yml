@@ -1,0 +1,76 @@
+- question: "Pourquoi choisir Claude pour industrialiser un agent IA en entreprise ?"
+  answer: >-
+    Claude (Anthropic) est reconnu pour sa qualité de raisonnement, sa fiabilité
+    sur les tâches métier complexes et ses garde-fous natifs en matière de
+    sécurité. Pour une entreprise qui veut industrialiser un agent IA en
+    production, Claude offre un bon équilibre entre capacité, coût et
+    prévisibilité des comportements — des critères clés pour un déploiement
+    encadré et supervisé.
+
+- question: "Comment intégrer Claude dans le système d'information existant ?"
+  answer: >-
+    Claude s'intègre via API (Anthropic, AWS Bedrock, Google Vertex) dans une
+    architecture agentique cadrée : orchestrateur, connecteurs métier, garde-fous,
+    logs d'audit. GenieFactory construit l'intégration au SI (ERP, CRM, logiciels
+    métier) avec validation humaine et traçabilité, plutôt que d'exposer le
+    modèle brut aux utilisateurs finaux.
+
+- question: "Les données de l'entreprise sont-elles envoyées à Anthropic lors des appels à Claude ?"
+  answer: >-
+    Les prompts et réponses transitent par l'API Claude lors du traitement.
+    Anthropic n'utilise pas les données clients API pour l'entraînement par
+    défaut. Pour les cas sensibles, Claude est disponible via AWS Bedrock et
+    Google Vertex, ce qui permet un traitement dans une région donnée (Europe)
+    sous contrats d'hébergement cloud du client. GenieFactory minimise aussi les
+    données envoyées par conception (redaction, anonymisation, contextes réduits).
+
+- question: "Quelle est la différence entre un chatbot Claude et un agent Claude industrialisé ?"
+  answer: >-
+    Un chatbot Claude répond à des questions dans une interface de chat. Un
+    agent Claude industrialisé est un système métier : il lit vos données,
+    exécute des actions dans votre SI (lecture-écriture), suit des règles
+    métier encodées dans un Knowledge Graph, passe par des garde-fous,
+    trace ses décisions et soumet les cas limites à un humain. Il est
+    supervisé, versionné, monitoré — pas un simple dialogue.
+
+- question: "Quels cas d'usage prioritaires pour un agent Claude en entreprise ?"
+  answer: >-
+    Les processus à volume avec règles claires et variantes documentables :
+    rapprochement bancaire, qualification documentaire, extraction de données
+    structurées depuis des documents (factures, actes, contrats), préparation
+    de livrables (premiers jets, synthèses), assistance métier contextualisée.
+    Les tâches entièrement à forte responsabilité humaine restent arbitrées
+    par l'expert.
+
+- question: "Comment gouverner un agent Claude selon l'AI Act ?"
+  answer: >-
+    En appliquant les obligations qui correspondent au niveau de risque du cas
+    d'usage : fiche système, traçabilité des entrées-sorties-décisions,
+    supervision humaine configurable, politique de données, information des
+    utilisateurs. GenieFactory livre un dossier AI Act complet pour chaque
+    agent Claude déployé, exportable pour audit.
+
+- question: "Qui reste propriétaire du code et du paramétrage de l'agent Claude ?"
+  answer: >-
+    Le client. Le code applicatif de l'agent (orchestrateur, connecteurs,
+    garde-fous, Knowledge Graph), les paramètres, les données et les logs
+    sont livrés dans votre infrastructure. Claude reste un modèle consommé
+    via API — ce qui est propriétaire, c'est tout l'agent industrialisé
+    autour du modèle. Aucun lock-in.
+
+- question: "Peut-on changer de modèle (Claude, GPT, Mistral) après le déploiement ?"
+  answer: >-
+    Oui. L'architecture construite par GenieFactory est multi-LLM par
+    conception : le modèle est une dépendance externe, pas le cœur de
+    l'agent. Changer de fournisseur (Claude vers GPT, Mistral, ou modèle
+    open-source auto-hébergé) demande de refaire des évaluations qualité,
+    mais ne rebâtit pas tout l'agent. La portabilité est une propriété
+    d'architecture.
+
+- question: "Combien coûte un agent Claude en production par rapport aux coûts d'API ?"
+  answer: >-
+    Les coûts d'API Claude (ou de tout LLM) sont généralement une part
+    minoritaire du coût total d'un agent en production. L'essentiel du
+    coût est dans l'ingénierie : cadrage, Knowledge Graph, intégrations SI,
+    garde-fous, monitoring, documentation AI Act, formation. GenieFactory
+    chiffre un agent Claude au forfait par processus cadré, pas à l'API.

@@ -1,10 +1,8 @@
 primary:
-  - label: Comment ça marche
-    href: /#how-it-works
+  - label: Transformation agentique
+    href: /transformation-agentique
   - label: Cas d'usages
     href: /portfolio
-  - label: Fonctionnalités
-    href: /#features
   - label: Gouvernance IA
     href: /solutions/gouvernance-ia
   - label: Blog

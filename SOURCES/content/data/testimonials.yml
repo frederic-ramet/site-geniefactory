@@ -1,0 +1,40 @@
+# Témoignages clients
+# IMPORTANT : vérifier le champ `usable_publicly` avant affichage
+# Seuls Chambre des Notaires de Caen et Doc'n Kit sont utilisables publiquement selon la stratégie SEO
+
+- name: "Pierre Ly"
+  role: "Direction Innovation"
+  company: "Croix-Rouge Française"
+  photo: /images/testimonials/pierre-ly.jpg
+  quote: "Genie Factory a été clé pour délivrer des applications IA en un temps record, tout en donnant un cadre et une continuité aux projets."
+  usable_publicly: false
+  notes: "Pas d'accord explicite selon la stratégie SEO V2 — à valider avant publication"
+
+- name: "Sébastien Weiss"
+  role: "Head of Innovation"
+  company: "Nexans"
+  photo: /images/testimonials/sebastien-weiss.jpg
+  quote: "Nous travaillons sur un pilote avec Genie Factory pour accélérer le déploiement d'applications dans notre digital factory."
+  usable_publicly: false
+  notes: "Pas d'accord explicite selon la stratégie SEO V2 — à valider avant publication"
+
+# Témoignages utilisables publiquement
+# À COMPLÉTER AVEC LES CITATIONS - QUESTION POUR TOI :
+# Tu as des citations de Chambre des Notaires de Caen et Doc'n Kit ?
+# Sinon, afficher juste les logos dans la section "Ils nous font confiance"
+
+- name: "[À compléter]"
+  role: "[À compléter]"
+  company: "Chambre des Notaires de Caen"
+  photo: /images/testimonials/notaires-caen.jpg
+  quote: "[Citation à récupérer]"
+  usable_publicly: true
+  status: "Client en production"
+
+- name: "[À compléter]"
+  role: "[À compléter]"
+  company: "Doc'n Kit"
+  photo: /images/testimonials/docnkit.jpg
+  quote: "[Citation à récupérer]"
+  usable_publicly: true
+  status: "Client en production"

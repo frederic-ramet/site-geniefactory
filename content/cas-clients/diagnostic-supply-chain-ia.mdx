@@ -1,0 +1,68 @@
+---
+title: "5 à 10M€ de fuites de valeur identifiées en quelques semaines dans une ETI industrielle"
+description: "Comment GenieFactory a croisé données ERP et savoir métier pour cartographier les pertes cachées d'une supply chain complexe — et livrer un plan d'action chiffré."
+client: "ETI industrielle française"
+category: "Industrie manufacturière"
+date: 2026-04-15
+image: /images/cas-clients/diagnostic-supply-chain-ia.webp
+---
+
+> **En bref.** Une ETI industrielle française de 115M€ de CA, récemment migrée sur SAP S/4HANA, fait face à une supply chain sous tension : BFR élevé, retards structurels, urgences chroniques. En quelques semaines, GenieFactory a construit un Knowledge Graph croisant 8 exports SAP et 4 entretiens métier — et identifié 5 fuites de valeur dont 2 à 4M€ récupérables en quick wins sous 6 mois.
+
+## Le contexte
+
+Secteur industriel sous pression. 115M€ de CA, 2 000 collaborateurs. Mix produits standard (70-80 %) et sur-mesure (20-30 %). Réseau de fournisseurs multiples, délais longs, cycle de planification complexe.
+
+L'ERP SAP S/4HANA vient d'être migré. Tous les modules sont en place — FI/CO, SD, MM, PP, PM. Mais les paramètres de planification n'ont pas été recalibrés. Les stocks de sécurité sont des chiffres ronds, inchangés depuis deux ans. Le marché du secteur s'est contracté de 17,6 % en 2024. Dans ce contexte, chaque euro de BFR immobilisé est un levier.
+
+La direction sait qu'il y a des fuites. Elle ne sait pas exactement où. Et les équipes, prises dans le flux opérationnel, n'ont pas le recul pour les objectiver.
+
+## L'approche : Identifier et Cadrer avant d'agir
+
+GenieFactory a appliqué les deux premières étapes du [framework ICPC](/blog/framework-identifier-cadrer-produire-capitaliser) — Identifier et Cadrer — avant toute recommandation.
+
+**Entretiens métier structurés.** Quatre sessions avec les équipes ADV, achats, production et logistique, guidées par la plateforme. L'objectif n'est pas de collecter les processus déclarés — mais de capturer le travail réel. L'écart entre les deux est systématiquement là où se cachent les pertes.
+
+**Extraction et modélisation des données SAP.** Huit exports SAP nettoyés et croisés : articles, stocks, mouvements, commandes, ordres de fabrication, nomenclatures, comptabilité analytique. Un modèle pivot "planning-ready" est construit à partir des données réelles, pas des paramétrages théoriques.
+
+**Construction du Knowledge Graph.** Les quatre entretiens sont transformés en quatre graphes de processus, puis fusionnés en un Knowledge Graph unifié. Ce graphe relie les flux bout en bout — du devis à la livraison — en intégrant les contraintes et les frictions réelles remontées par les équipes.
+
+**Scorecard enrichi.** Seize KPIs calculés sur la chaîne PLAN→BUY→MAKE→STOCK→DELIVER. Chaque indicateur est enrichi avec les causes racines extraites du Knowledge Graph. Le résultat passe de "vous avez un problème" à "voici pourquoi et comment le résoudre".
+
+## Les 5 fuites de valeur identifiées
+
+**Surstock matières premières structurel — 3 à 5M€ de BFR immobilisé.** Les délais fournisseurs dans l'ERP ne correspondent pas aux délais réels. L'entreprise commande et stocke trop tôt. Sur 24,3M€ de stock matières premières, le potentiel de réduction est significatif.
+
+**En-cours de production excessif — 1 à 3M€.** Des ordres de fabrication sont lancés sans que tous les composants soient disponibles. Les goulots s'accumulent, le WIP gonfle, les délais s'allongent. Le "full kit" n'est pas systématiquement vérifié avant lancement.
+
+**Nervosité MRP non traitée — impact indirect élevé.** Les paramètres SAP n'ayant pas été recalibrés après la migration, le système génère une avalanche de messages "Reschedule In/Out" contradictoires que personne ne traite. La planification perd en fiabilité, les équipes perdent confiance dans l'ERP et contournent.
+
+**Transport premium compensatoire — 200 à 500K€/an.** Les livraisons express sont devenues le mode opératoire normal pour rattraper les retards structurels. L'urgence est gérée en temps réel plutôt que prévenue en amont.
+
+**Stocks morts et à rotation lente — 500K€ à 1M€.** Du capital immobilisé sans utilisation prévisible, faute de revue systématique du portefeuille articles.
+
+**Impact total estimé : 5 à 10M€, dont 2 à 4M€ récupérables en quick wins sous 3 à 6 mois** — principalement par recalibrage des paramètres MRP et mise en place d'une revue stock hebdomadaire outillée.
+
+## Ce que l'IA change dans ce type de mission
+
+Un diagnostic supply chain classique analyse les données ou les entretiens — rarement les deux ensemble, rarement en quelques semaines.
+
+Le Knowledge Graph croise les deux sources en continu. Une incohérence entre le délai déclaré par les achats et le délai réel dans les données SAP remonte automatiquement. Les causes racines sont liées aux KPIs, pas listées séparément.
+
+La vitesse change également la nature de la mission : les équipes reçoivent un diagnostic objectivé pendant qu'elles sont encore dans le contexte du problème — pas six mois après, quand les priorités ont changé.
+
+Enfin, tout ce qui est construit — ontologie métier, règles de scoring, patterns de diagnostic — est encodé dans le Knowledge Graph et appartient au client. Le diagnostic suivant, dans le même secteur ou un secteur adjacent, repart de cette base.
+
+## Un modèle reproductible
+
+La démarche s'applique à toute ETI industrielle avec un ERP (SAP, Sage, Oracle, etc.) et une supply chain comportant un mix de produits standard et configurés. Les connecteurs ERP, le pipeline d'extraction et le moteur Knowledge Graph sont les mêmes. Ce qui s'adapte, c'est l'ontologie métier du secteur.
+
+GenieFactory travaille avec des partenaires verticaux qui apportent l'expertise sectorielle. Le client reste propriétaire de ses données et de son Knowledge Graph — sans dépendance à un outil ou à un prestataire.
+
+**Votre supply chain a-t-elle des fuites que vous ne voyez pas encore ?**
+
+[**Lancer un diagnostic →**](/contact)
+
+---
+
+*Pour comprendre la méthode derrière ce diagnostic : [Le framework ICPC](/blog/framework-identifier-cadrer-produire-capitaliser)*

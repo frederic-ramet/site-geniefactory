@@ -1,0 +1,33 @@
+# Les 4 étapes de "Comment ça marche"
+
+- number: "01"
+  slug: etabli
+  title: "Établi"
+  subtitle: "Le métier au centre"
+  description: "L'Établi rassemble vos équipes métier, digital et IT pour transformer les idées en spécifications partagées, enrichies de KPIs. Plus de silos, une vision commune dès le départ."
+  image: /images/steps/etabli.png
+  alt: "Interface Établi de Genie Factory – structuration des besoins métier en spécifications partagées"
+
+- number: "02"
+  slug: forge
+  title: "Forge"
+  subtitle: "Pensée pour la performance"
+  description: "Génération automatique du code et déploiement en un clic, sur nos serveurs ou chez vous (cloud managé ou on-premise)."
+  image: /images/steps/forge.png
+  alt: "Interface Forge de Genie Factory – génération automatique de code et déploiement IA en un clic"
+
+- number: "03"
+  slug: evaluation
+  title: "Évaluation"
+  subtitle: "Mesure immédiate"
+  description: "Les métiers testent immédiatement l'application, avec suivi en temps réel des KPIs. L'innovation devient mesurable et actionnable."
+  image: /images/steps/evaluation.png
+  alt: "Module d'évaluation Genie Factory – suivi des KPIs métier en temps réel après déploiement d'un POC IA"
+
+- number: "04"
+  slug: communaute
+  title: "Communauté"
+  subtitle: "Capitaliser sur l'existant"
+  description: "Marketplace de templates métiers et briques IA réutilisables. Assemblez vos applications sans repartir de zéro."
+  image: /images/steps/communaute.png
+  alt: "Marketplace Genie Factory – bibliothèque de templates métiers et briques IA réutilisables"

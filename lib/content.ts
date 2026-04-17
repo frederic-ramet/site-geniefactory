@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
 import { z } from 'zod';
+import { faqSchema } from './data';
 
 // ---------------------------------------------------------------------------
 // Zod schemas for frontmatter — matches the spec (sections 2 and 6).
@@ -42,6 +43,7 @@ export const blogFrontmatterSchema = z.object({
   schema: z.string().optional(),
   image: z.string().optional(),
   draft: z.boolean().optional(),
+  faq: faqSchema.optional(),
 });
 
 export const useCaseFrontmatterSchema = z.object({
@@ -52,6 +54,7 @@ export const useCaseFrontmatterSchema = z.object({
   date: dateString,
   updated: optionalDateString,
   image: z.string().optional(),
+  thumbnail: z.string().optional(),
   draft: z.boolean().optional(),
 });
 
@@ -137,7 +140,7 @@ export function getUseCaseCards() {
     client: u.frontmatter.client,
     category: u.frontmatter.category,
     excerpt: u.frontmatter.description,
-    image: u.frontmatter.image,
+    image: u.frontmatter.thumbnail ?? u.frontmatter.image,
   }));
 }
 

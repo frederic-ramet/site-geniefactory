@@ -12,14 +12,25 @@ address:
 sections:
   - title: Produit
     items:
+      - label: Transformation agentique
+        href: /transformation-agentique
+      - label: Gouvernance IA
+        href: /solutions/gouvernance-ia
       - label: Comment ça marche
         href: /#how-it-works
       - label: Fonctionnalités
         href: /#features
-      - label: Gouvernance IA
-        href: /solutions/gouvernance-ia
       - label: Programme Adopters
         href: /programme-adopters
+
+  - title: Solutions
+    items:
+      - label: Agent IA notariat
+        href: /solutions/notariat
+      - label: IA cabinet comptable
+        href: /solutions/finance-comptabilite
+      - label: Claude en entreprise
+        href: /solutions/claude-entreprise
 
   - title: Ressources
     items:
@@ -35,7 +46,7 @@ sections:
       - label: contact@geniefactory.fr
         href: mailto:contact@geniefactory.fr
       - label: LinkedIn
-        href: https://www.linkedin.com/company/geniefactory/
+        href: https://www.linkedin.com/company/genie-factory/
         external: true
       - label: Demander une démo
         href: https://calendar.google.com/calendar/u/0/appointments/schedules/placeholder

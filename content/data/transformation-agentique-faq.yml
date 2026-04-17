@@ -1,0 +1,63 @@
+- question: "Qu'est-ce que la transformation agentique ?"
+  answer: >-
+    La transformation agentique est la réorganisation des processus, des métiers et de
+    la gouvernance d'une entreprise par des agents IA autonomes. Elle délègue des chaînes
+    complètes de décision et d'exécution à des agents IA — tout en gardant l'humain au
+    contrôle et l'entreprise propriétaire de ses actifs.
+
+- question: "Quelle différence entre transformation digitale et transformation agentique ?"
+  answer: >-
+    La transformation digitale outille les humains avec des logiciels (ERP, CRM, cloud).
+    La transformation agentique réorganise l'entreprise avec des agents IA qui prennent
+    en charge des chaînes de travail entières, sous supervision humaine. Le périmètre
+    passe de la tâche isolée à la chaîne complète.
+
+- question: "Pourquoi parler de transformation agentique plutôt que d'adoption de l'IA ?"
+  answer: >-
+    Parce que "adopter l'IA" consiste à outiller des humains avec ChatGPT ou Copilot —
+    utile mais superficiel. La transformation agentique reconfigure les processus autour
+    d'agents IA qui prennent des décisions et exécutent des actions, avec traçabilité et
+    gouvernance. Le changement est de nature, pas d'outillage.
+
+- question: "Qu'est-ce que le framework ICPC ?"
+  answer: >-
+    ICPC signifie Identifier, Cadrer, Produire, Capitaliser. C'est la méthode GenieFactory
+    pour structurer une transformation agentique projet par projet : identifier les cas
+    d'usage priorisés, cadrer métier/tech/direction sur le même périmètre, produire en
+    conditions réelles avec validation humaine, capitaliser la connaissance dans un
+    Knowledge Graph propriétaire.
+
+- question: "Par où commencer une transformation agentique ?"
+  answer: >-
+    Par un processus métier à fort impact et cadrage clair — pas le plus complexe, le
+    plus démontrable. Formuler le ROI en une phrase avant de toucher à un outil. Si vous
+    ne pouvez pas écrire cette phrase, ne lancez pas le projet. Puis prévoir la
+    capitalisation dès le départ pour que chaque projet enrichisse le suivant.
+
+- question: "Quel rôle pour les experts métier dans la transformation agentique ?"
+  answer: >-
+    Un rôle central : ils passent d'utilisateurs d'outils à validateurs au centre du
+    système. Les agents IA exécutent, les experts arbitrent les cas limites et valident
+    les règles métier. Leur connaissance tacite est encodée dans le Knowledge Graph de
+    l'entreprise, qui devient un actif durable.
+
+- question: "Qui garde la propriété des actifs créés ?"
+  answer: >-
+    Le client. GenieFactory garantit contractuellement que le code applicatif, le
+    Knowledge Graph, les modèles fine-tunés et la documentation appartiennent à
+    l'entreprise — livrés dans son dépôt, déployables sur son infrastructure. Aucun
+    lock-in éditeur.
+
+- question: "Combien de temps dure une transformation agentique ?"
+  answer: >-
+    Une transformation agentique se conduit par vagues de 8 à 16 semaines. Chaque vague
+    livre un agent IA en production sur un processus métier, enrichit le Knowledge Graph
+    et prépare la vague suivante. Une PME peut voir 3 à 5 agents en production en 9 à 12
+    mois avec cette méthode.
+
+- question: "La transformation agentique remplace-t-elle les collaborateurs ?"
+  answer: >-
+    Non. Elle supprime le travail invisible de traduction, reformulation et re-saisie
+    qui consumait 80% du temps sans créer de valeur. Les experts métier retrouvent du
+    temps pour les décisions à valeur ajoutée. Le travail se déplace de l'exécution
+    manuelle vers la supervision et l'arbitrage.

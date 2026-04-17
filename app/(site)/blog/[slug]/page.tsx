@@ -11,7 +11,7 @@ import {
 import { PlaceholderImage } from '@/components/ui/PlaceholderImage';
 import { AuthorBio } from '@/components/ui/AuthorBio';
 import { JsonLd } from '@/components/ui/JsonLd';
-import { articleSchemaForBlog } from '@/lib/schema';
+import { articleSchemaForBlog, faqPageSchema } from '@/lib/schema';
 
 type Params = { params: { slug: string } };
 
@@ -96,10 +96,41 @@ export default function BlogPostPage({ params }: Params) {
           <div className="mdx mt-10">
             <MDXRemote source={post.body} />
           </div>
+          {post.frontmatter.faq && post.frontmatter.faq.length > 0 && (
+            <section
+              aria-labelledby="faq-heading"
+              className="mt-16 border-t border-ink-100 pt-12"
+            >
+              <h2
+                id="faq-heading"
+                className="font-display text-2xl font-semibold tracking-tight text-ink-900 sm:text-3xl"
+              >
+                Questions fréquentes
+              </h2>
+              <dl className="mt-8 space-y-6">
+                {post.frontmatter.faq.map((item, i) => (
+                  <div
+                    key={i}
+                    className="rounded-2xl border border-ink-100 bg-white p-6 shadow-soft"
+                  >
+                    <dt className="font-display text-lg font-semibold text-ink-900">
+                      {item.question}
+                    </dt>
+                    <dd className="mt-3 text-ink-700 leading-relaxed">
+                      {item.answer}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          )}
           {author && <AuthorBio author={author} />}
         </div>
       </div>
       <JsonLd data={articleSchemaForBlog(post.slug, post.frontmatter)} />
+      {post.frontmatter.faq && post.frontmatter.faq.length > 0 && (
+        <JsonLd data={faqPageSchema(post.frontmatter.faq)} />
+      )}
     </article>
   );
 }

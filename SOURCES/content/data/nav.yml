@@ -1,0 +1,26 @@
+# Navigation principale
+# Le lien "Contactez-nous" pointe vers Google Calendar
+
+main:
+  - label: "Comment ça marche"
+    href: "/#how-it-works"
+  - label: "Cas d'usages"
+    href: "/portfolio"
+  - label: "Fonctionnalités"
+    href: "/#features-section"
+  - label: "Gouvernance IA"
+    href: "/solutions/gouvernance-ia"
+  - label: "Blog"
+    href: "/blog"
+  - label: "À propos"
+    href: "/aboutus"
+
+cta:
+  label: "Contactez-nous"
+  href: "https://calendar.app.google/gVYRa5UKrjsbh6U48"
+  external: true
+
+cta_demo:
+  label: "Demander une démo"
+  href: "https://calendar.app.google/gVYRa5UKrjsbh6U48"
+  external: true

@@ -1,0 +1,59 @@
+- question: "Quel agent IA pour une étude notariale ?"
+  answer: >-
+    Un agent IA métier dédié à la qualification d'actes, à l'extraction
+    documentaire (pièces d'identité, titres de propriété, actes authentiques) et
+    à l'assistance aux clercs. Il lit les documents entrants, en extrait les
+    données structurées, les rapproche des dossiers en cours et prépare les
+    actions du clerc. Il ne remplace pas le clerc — il prépare son travail.
+
+- question: "Comment l'agent IA s'intègre-t-il au logiciel notarial existant ?"
+  answer: >-
+    Par API ou connecteurs dédiés aux principaux éditeurs du notariat (Genapi,
+    Fiducial, iNot). L'agent lit et écrit dans le logiciel existant sans casser
+    les workflows des clercs. L'intégration est conçue comme un module
+    additionnel, pas comme un remplacement.
+
+- question: "Les données sensibles des clients restent-elles confidentielles ?"
+  answer: >-
+    Oui. L'infrastructure peut être déployée sur votre propre cloud (France ou
+    Europe) ou on-premise. Aucune donnée client ne transite par des serveurs de
+    prestataires non autorisés. RBAC fin par dossier, logs d'audit horodatés,
+    conformité RGPD et AI Act intégrée. Le notaire reste juridiquement et
+    techniquement responsable des données.
+
+- question: "Quels processus notariaux peut-on automatiser ?"
+  answer: >-
+    Qualification d'actes, extraction de données depuis des pièces scannées,
+    rapprochement bancaire avec les comptes CARPA, rédaction de premiers jets
+    d'actes simples, préparation de tableaux de financement, relance clients,
+    réponses aux questions récurrentes. Les actes à forte exigence juridique
+    restent sous la responsabilité du notaire.
+
+- question: "Quel ROI pour un agent IA en étude notariale ?"
+  answer: >-
+    Sur des processus à volume (qualification d'actes, extraction documentaire),
+    les études observent 30 à 50% de temps gagné sur les tâches concernées. Sur
+    une étude de taille moyenne, cela représente plusieurs dizaines d'heures
+    par mois redéployables vers l'expertise juridique et le conseil client.
+
+- question: "Combien de temps pour déployer un agent IA notarial ?"
+  answer: >-
+    Un premier agent sur un processus cadré (qualification d'actes, extraction
+    pièces) s'industrialise en 8 à 12 semaines, de l'expression du besoin à la
+    mise en production avec les clercs. Le déploiement inclut l'intégration au
+    logiciel notarial, la formation des équipes et la documentation AI Act.
+
+- question: "La conformité AI Act pose-t-elle des obligations particulières au notariat ?"
+  answer: >-
+    La majorité des cas d'usage notariaux sont en risque limité (obligations
+    documentaires). Les cas touchant à la notation de risque client peuvent
+    basculer en haut risque. GenieFactory livre la documentation AI Act
+    (fiche système, logs d'audit, procédures de supervision) pour chaque agent
+    déployé dans l'étude.
+
+- question: "Qui garde la propriété de l'agent IA et des données notariales ?"
+  answer: >-
+    L'étude. Le code applicatif de l'agent, les paramètres, les données métier
+    et le Knowledge Graph construit à partir de vos dossiers vous appartiennent.
+    Livrés dans votre infrastructure, sans dépendance éditeur. Si vous
+    choisissez d'internaliser ou de changer de prestataire, vous gardez la main.

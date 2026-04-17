@@ -16,7 +16,7 @@ const steps: Step[] = [
   {
     id: 'ask',
     author: 'user',
-    label: "Nous voulons un copilote RH pour les managers",
+    label: "Nous voulons automatiser le rapprochement bancaire de nos clients",
   },
   {
     id: 'spec',

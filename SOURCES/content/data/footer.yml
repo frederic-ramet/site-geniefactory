@@ -1,0 +1,47 @@
+# Données du footer
+
+company:
+  name: "Genie Factory"
+  tagline: "La plateforme de transformation agentique pour industrialiser vos applications IA"
+  logo: /images/logo-dark.png
+
+contact:
+  email: "contact@geniefactory.fr"
+  address: "12 avenue des Prés, 78180 Montigny-le-Bretonneux"
+
+social:
+  linkedin: "https://www.linkedin.com/company/genie-factory/"
+
+sections:
+  - title: "Information"
+    links:
+      - label: "Comment ça marche"
+        href: "/#how-it-works"
+      - label: "Fonctionnalités"
+        href: "/#features-section"
+      - label: "Cas d'usages"
+        href: "/portfolio"
+      - label: "Blog"
+        href: "/blog"
+      - label: "À propos"
+        href: "/aboutus"
+
+  - title: "Solutions"
+    links:
+      - label: "Gouvernance IA"
+        href: "/solutions/gouvernance-ia"
+      - label: "Programme Adopters"
+        href: "/programme-adopters"
+
+  - title: "Légal"
+    links:
+      - label: "Mentions légales"
+        href: "/mentions-legales"
+      - label: "Politique de confidentialité"
+        href: "/confidentialite"
+
+cta:
+  label: "Demander une démo"
+  href: "https://calendar.app.google/gVYRa5UKrjsbh6U48"
+
+copyright: "© 2026 Genie Factory. Tous droits réservés."

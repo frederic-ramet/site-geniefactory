@@ -1,0 +1,34 @@
+# FAQ — questions reformulées selon la stratégie SEO/GEO V2
+# Chaque réponse commence par une phrase directe (règle GEO)
+# Une seule réponse est confirmée par le site actuel (question 1)
+# Les autres réponses ont été rédigées en cohérence avec la stratégie
+# À RELIRE/VALIDER par l'équipe avant publication
+
+- question: "Que se passe-t-il si le POC est concluant ?"
+  answer: "Le prototype passe directement en production sur la plateforme : durcissement, intégration aux systèmes existants, mise à disposition des équipes métier. Vous gardez la propriété du code généré et pouvez sortir de la plateforme sans lock-in technique."
+  validated: true
+
+- question: "Comment justifier le ROI d'un POC IA ?"
+  answer: "Chaque POC est cadré avec des KPIs métier mesurables dès le départ (temps gagné, erreurs évitées, volume traité). Le baromètre data.gouv.fr sur 200 déploiements IA en France montre un ROI médian de 159,8 % sur 12 mois, avec 165 % pour les PME. Nous aidons à documenter ces gains pour construire le business case."
+  validated: false
+  notes: "Chiffres issus de la stratégie SEO — à valider"
+
+- question: "Combien de temps pour obtenir un premier prototype testable ?"
+  answer: "Un prototype testable par les équipes métier est livré en quelques semaines après un cadrage de 90 minutes. Les cas concrets vont de 3 semaines (Spirit Immobilier, Actheos) à 3 mois pour des projets plus complexes impliquant de la donnée historique (Nexans SQDC)."
+  validated: false
+
+- question: "La solution est-elle conforme à l'AI Act ?"
+  answer: "Oui, la conformité AI Act est intégrée by design. Traçabilité, gestion des rôles (RBAC), journalisation, supervision continue et documentation sont nativement présentes dans chaque application générée. Cela réduit drastiquement la charge de mise en conformité côté DSI."
+  validated: false
+
+- question: "Faut-il une équipe technique pour utiliser GenieFactory ?"
+  answer: "Non, la plateforme est conçue pour que les équipes métier expriment leurs besoins et obtiennent une application fonctionnelle, avec gouvernance intégrée. L'équipe IT reste impliquée pour la validation des intégrations et la supervision — mais elle n'est plus un goulot d'étranglement."
+  validated: false
+
+- question: "Peut-on intégrer nos systèmes existants (ERP, CRM, API internes) ?"
+  answer: "Oui, les applications sont API-first et conçues pour s'intégrer aux systèmes existants : ERP, CRM, workflows internes, bases de données, API maison. Les cas Spirit Immobilier et Nexans illustrent des intégrations ERP et Databricks déjà en production."
+  validated: false
+
+- question: "Quels types de cas d'usage sont couverts ?"
+  answer: "Automatisation de processus documentaires (OCR + LLM), agents conversationnels métier, analyse d'images industrielles, traduction technique spécialisée, diagnostic data/IA, copilotes de développement. Nos cas d'usage concrets couvrent la comptabilité, l'industrie, l'immobilier, la mode, l'expertise comptable et la CAO/FAO."
+  validated: false

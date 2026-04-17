@@ -1,0 +1,65 @@
+- question: "Quel agent IA pour un cabinet comptable ou une direction financière ?"
+  answer: >-
+    Un agent IA métier dédié aux tâches volumiques et règles-intensives :
+    rapprochement bancaire, qualification d'écritures, préparation de TVA,
+    traitement des factures fournisseurs, relances clients. L'agent traite les
+    cas standards, l'expert comptable arbitre les cas limites et valide.
+
+- question: "Comment automatiser le rapprochement bancaire avec l'IA ?"
+  answer: >-
+    En faisant lire à l'agent les relevés bancaires, les écritures comptables
+    et les documents justificatifs. L'agent propose les rapprochements, détecte
+    les écarts, pré-qualifie les écritures non rapprochées et alerte sur les
+    anomalies. Le comptable valide en lot, ajuste les cas ambigus. Gain de
+    temps typique : 40 à 70% sur ce processus.
+
+- question: "L'agent IA s'intègre-t-il aux logiciels comptables existants ?"
+  answer: >-
+    Oui. L'agent se connecte aux principaux logiciels de comptabilité (Sage,
+    Cegid, Pennylane, Agiris, Quadratus, Coala, EBP) par API ou connecteurs.
+    Il lit et écrit sans casser les habitudes du cabinet. Les imports/exports
+    suivent les formats standards du secteur.
+
+- question: "Quelles données comptables restent confidentielles ?"
+  answer: >-
+    Toutes. L'infrastructure peut être déployée sur votre cloud (France ou
+    Europe) ou on-premise. Aucune donnée client ne transite par des serveurs
+    tiers non autorisés. RBAC fin par client ou par dossier, logs d'audit
+    horodatés, conformité RGPD et AI Act. Secret professionnel préservé.
+
+- question: "Quel ROI pour un agent IA en cabinet comptable ?"
+  answer: >-
+    Sur des processus à volume (rapprochement, saisie, TVA), les cabinets
+    observent 30 à 50% de temps gagné. Sur un cabinet de 10 collaborateurs,
+    cela permet de traiter 20 à 40% de clients supplémentaires à effectif
+    constant, ou de redéployer les équipes vers le conseil à forte valeur.
+
+- question: "Combien de temps pour déployer un agent IA comptable ?"
+  answer: >-
+    Un premier agent sur un processus cadré (rapprochement bancaire, extraction
+    factures) s'industrialise en 6 à 10 semaines — cadrage, construction,
+    tests sur données anonymisées, mise en production supervisée. Les cas
+    complexes ou multi-processus s'étalent sur 3 à 5 mois.
+
+- question: "L'AI Act s'applique-t-il à un cabinet comptable ?"
+  answer: >-
+    Oui, comme à toute organisation qui déploie des systèmes IA. La plupart
+    des cas d'usage comptables sont en risque limité (obligations documentaires
+    standards). Les systèmes de scoring ou d'aide à la décision de crédit
+    peuvent basculer en haut risque. GenieFactory livre la documentation AI Act
+    complète pour chaque agent déployé.
+
+- question: "Que se passe-t-il si l'agent IA se trompe ?"
+  answer: >-
+    L'architecture intègre une supervision humaine configurable : l'agent
+    propose, le comptable arbitre — en lot pour les cas standards, au cas par
+    cas pour les ambigus. Chaque décision est tracée (entrée, raisonnement,
+    sortie) et auditable. Les erreurs sont détectables et correctives, le
+    comptable garde la responsabilité professionnelle.
+
+- question: "Qui garde la propriété de l'agent et des données ?"
+  answer: >-
+    Le cabinet. Code applicatif, paramètres, Knowledge Graph des règles métier,
+    logs d'audit : tout est livré dans votre infrastructure. Aucun lock-in
+    éditeur. Vous gardez la main sur vos actifs et pouvez changer de
+    prestataire ou internaliser si nécessaire.

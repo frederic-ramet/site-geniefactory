@@ -11,6 +11,23 @@ draft: false
 priority: P1
 keywords: [POC IA production, déployer IA entreprise, industrialisation IA, POC IA qui échoue, mise en production IA]
 image: /images/blog/passer-poc-ia-production.webp
+faq:
+  - question: "Pourquoi la plupart des POC IA ne passent jamais en production ?"
+    answer: "Parce qu'ils sont conçus pour impressionner, pas pour fonctionner. Sur 200 projets IA B2B étudiés en France, les causes d'échec principales sont : 38% mauvais choix de cas d'usage, 24% absence de sponsor exécutif, 19% tool-first thinking (choisir l'outil avant de définir le problème), 12% absence de conduite du changement. Le POC fonctionne sur des cas simples mais les edge cases du terrain le tuent."
+  - question: "Quelle différence entre un POC et un projet IA en production ?"
+    answer: "Un POC prouve qu'une technologie fonctionne. Un projet en production prouve qu'un processus métier est amélioré. La différence est : conditions réelles vs démo, intégration SI vs isolé, adoption mesurée vs présentée, supervision humaine intégrée vs ignorée, et gouvernance conforme vs absente. Ce n'est pas la même exigence technique ni organisationnelle."
+  - question: "Qu'est-ce que le tool-first thinking et pourquoi est-il dangereux ?"
+    answer: "Le tool-first thinking consiste à choisir l'outil (ChatGPT, Copilot, un générateur d'applications) avant d'avoir défini le problème métier. Résultat : le POC démontre la capacité de l'outil, pas la valeur métier. C'est la cause de 19% des échecs de projets IA B2B en France. L'antidote : formuler le ROI en une phrase avant de toucher à un outil."
+  - question: "Comment cadrer correctement un POC IA ?"
+    answer: "En alignant métier, tech et direction sur le même périmètre avant de coder. Concrètement : définir le processus cible, quantifier la valeur attendue, identifier les données nécessaires et leur qualité, préciser les critères de succès mesurables, et valider les conditions de mise en production. C'est la phase que tout le monde saute, et la cause n°1 d'échec des projets IT (71%)."
+  - question: "Faut-il intégrer la supervision humaine dès le POC ?"
+    answer: "Oui. Les systèmes IA avec validation humaine intégrée dès la conception ont 4 fois moins d'incidents critiques. Attendre la production pour ajouter la supervision humaine mène à des architectures rigides et à des refus d'adoption. La supervision humaine doit être un choix d'architecture, pas une rustine."
+  - question: "Quel budget prévoir pour passer d'un POC à la production ?"
+    answer: "En règle générale, le passage en production coûte 3 à 5 fois plus cher que le POC initial — intégration SI, gouvernance, conduite du changement, monitoring, SLA, sécurité. Mais un POC bien cadré réduit ce ratio. Chez GenieFactory, nous industrialisons des agents IA métier en production en boucle courte, ce qui lisse les coûts et évite l'effet tunnel."
+  - question: "Combien de temps pour industrialiser un POC IA réussi ?"
+    answer: "Entre 2 et 6 mois selon la complexité : intégration au SI existant, volumétrie de données, nombre d'utilisateurs, exigences de conformité, et conduite du changement. Un agent IA métier sur un processus simple (rapprochement documentaire, extraction facture) s'industrialise en 6 à 10 semaines. Un agent complexe multi-processus demande 4 à 6 mois."
+  - question: "Quel est le rôle du sponsor exécutif dans un projet IA ?"
+    answer: "24% des POC IA échouent faute de sponsor exécutif. Le sponsor garantit l'alignement budgétaire, arbitre les conflits de priorités, et porte le projet auprès du comité de direction. Sans lui, le POC reste une expérimentation isolée qu'un changement de priorité fait disparaître. Le sponsor doit être identifié avant de lancer le POC, pas après."
 ---
 
 # Comment passer d'un POC IA à la production ?
@@ -23,7 +40,7 @@ Parce qu'ils sont conçus pour impressionner, pas pour fonctionner. Plus de 80% 
 
 38% échouent à cause d'un mauvais choix de cas d'usage. On a tenté d'automatiser des tâches qui nécessitaient un jugement expert. Le POC fonctionne sur des cas simples, mais les edge cases du terrain le tuent.
 
-19% échouent par "tool-first thinking". On a choisi l'outil (ChatGPT, Copilot, une plateforme no-code) avant de définir le problème. Le POC démontre la capacité de l'outil, pas la valeur métier.
+19% échouent par "tool-first thinking". On a choisi l'outil (ChatGPT, Copilot, un générateur d'applications) avant de définir le problème. Le POC démontre la capacité de l'outil, pas la valeur métier.
 
 24% échouent faute de sponsor exécutif. Un manager intermédiaire lance le POC sans alignement avec la direction. Six mois plus tard, le budget est coupé.
 

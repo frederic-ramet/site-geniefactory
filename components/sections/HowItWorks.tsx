@@ -12,7 +12,7 @@ export function HowItWorks({ steps }: { steps: Step[] }) {
     <Section
       id="how-it-works"
       eyebrow="Comment ça marche"
-      title="Du besoin à l'application IA en production"
+      title="Industrialiser vos agents IA métier, du besoin à la production"
       subtitle="Une boucle courte entre vos équipes métier et les agents IA — chaque étape produit un livrable concret et mesurable."
     >
       <ol className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">

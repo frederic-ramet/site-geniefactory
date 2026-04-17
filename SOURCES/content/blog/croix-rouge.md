@@ -1,0 +1,61 @@
+---
+title: "Hackathon IA Croix-Rouge : 6 prototypes en 48h, 2 déployés en production"
+slug: croix-rouge
+description: "Comment GenieFactory a accompagné la Croix-Rouge française sur un hackathon IA de 48h avec 75 participants : 6 prototypes conçus, 2 déployés en production en 6 mois."
+author: GenieFactory
+date: 2025-03-30
+updated: 2026-04-15
+image: /images/blog/croix-rouge-hackathon.png
+image_source: https://framerusercontent.com/images/0uGznIDV58PutfG2JX5u5pdEw0.png
+category: Retour d'expérience
+tags: [hackathon, Croix-Rouge, IA, prototypage rapide, formation]
+schema: Article
+---
+
+# Hackathon IA Croix-Rouge : 6 prototypes en 48h, 2 déployés en production
+
+En avril 2025, la Croix-Rouge française, GenieFactory, Plug and Play et la Simplon Foundation ont réuni 75 participants pour transformer des idées en solutions utiles sur le terrain — et accélérer la formation et la préparation aux crises de milliers de bénévoles.
+
+## Quel était le défi à relever ?
+
+Dans une crise, chaque minute compte. Comment outiller les équipes pour mieux former aux gestes qui sauvent et préparer la population, sans ajouter de complexité opérationnelle ?
+
+## Quelle approche a été déployée en 48h ?
+
+Le hackathon s'est organisé autour de deux priorités claires :
+
+1. **Optimiser la formation aux premiers secours** via des outils immersifs
+2. **Préparer la population** grâce à des simulations réalistes
+
+Le dispositif GenieFactory a reposé sur une plateforme centralisée pour partager prototypes et outils, des ateliers de co-création, du mentorat technique et un accompagnement stratégique en continu.
+
+## Quels résultats mesurables ont été obtenus ?
+
+- **6 prototypes** conçus et testés en 48h
+- **2 cas d'usage déployés en production en 6 mois** :
+  - Un **référentiel de données partagé**, pour capitaliser et réutiliser rapidement
+  - Une **culture commune de l'innovation IA** entre techniques et opérationnels, pour fluidifier la collaboration et accélérer la mise en pratique
+
+## Qu'est-ce qui a changé sur le terrain ?
+
+- **Formation plus efficace** : contenus mieux ciblés, parcours immersifs, montée en compétences plus rapide
+- **Préparation renforcée aux crises** : scénarios réalistes, réflexes standardisés
+- **Collaboration simplifiée** : mêmes données, mêmes repères, décisions plus rapides
+
+## Que dit la Croix-Rouge de cette expérience ?
+
+> « L'utilisation de la plateforme a été un élément clé du succès du hackathon, en permettant de délivrer des applications IA en un temps record tout en donnant un cadre et une continuité aux projets. Nous attendons de pouvoir exploiter les prochaines fonctionnalités de la plateforme dans le cadre d'un partenariat en 2025-2026. »
+>
+> — **Pierre Ly**, Direction Innovation, Croix-Rouge Française
+
+## Chiffres clés
+
+- **75 participants**
+- **48 heures** de hackathon
+- **6 prototypes** conçus
+- **2 déploiements en production** en 6 mois
+
+---
+
+**Vous voulez accélérer vos projets IA avec un impact concret — du besoin au prototype déployable en jours, pas en semaines ?**
+[Demander une démo](https://calendar.app.google/gVYRa5UKrjsbh6U48)

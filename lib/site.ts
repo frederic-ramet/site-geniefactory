@@ -9,7 +9,7 @@ export const siteConfig = {
   name: 'Genie Factory',
   url: 'https://www.geniefactory.fr',
   email: 'contact@geniefactory.fr',
-  linkedin: 'https://www.linkedin.com/company/geniefactory/',
+  linkedin: 'https://www.linkedin.com/company/genie-factory/',
   demoUrl:
     'https://calendar.google.com/calendar/u/0/appointments/schedules/placeholder',
 } as const;

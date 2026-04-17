@@ -46,3 +46,35 @@ programme-adopters:
     IA avec GenieFactory. Accompagnement rapproché, tarifs early adopter.
   og_image: /images/og/adopters.webp
   h1: "Programme Early Adopters"
+
+transformation-agentique:
+  title: "Transformation agentique entreprise — Industrialiser vos agents IA métier — GenieFactory"
+  description: >-
+    La transformation agentique réorganise vos processus, métiers et gouvernance
+    par des agents IA autonomes. Méthode, piliers, cas clients et feuille de route.
+  schema: WebPage
+  h1: "Transformation agentique : industrialiser les agents IA dans votre entreprise"
+
+notariat:
+  title: "Agent IA pour étude notariale — Automatisation notariat — GenieFactory"
+  description: >-
+    Industrialisez un agent IA pour votre étude notariale : qualification d'actes,
+    extraction documentaire, assistance aux clercs. Adossé au cas Marianne Notaires.
+  schema: Service
+  h1: "Agent IA pour étude notariale : industrialiser l'automatisation notariale"
+
+finance-comptabilite:
+  title: "IA cabinet comptable — Rapprochement bancaire automatisé — GenieFactory"
+  description: >-
+    Industrialisez un agent IA pour votre cabinet comptable : rapprochement bancaire
+    automatisé, qualification d'écritures, préparation de TVA. Adossé au cas Actheos.
+  schema: Service
+  h1: "IA pour cabinet comptable : rapprochement bancaire automatisé et plus"
+
+claude-entreprise:
+  title: "Intégrer Claude en entreprise — Industrialisation agent Claude — GenieFactory"
+  description: >-
+    Industrialisez un agent Claude en production pour votre entreprise — avec gouvernance,
+    propriété du code et conformité AI Act. Cas d'usage, méthode, garde-fous.
+  schema: Service
+  h1: "Industrialiser un agent Claude en entreprise, avec gouvernance"

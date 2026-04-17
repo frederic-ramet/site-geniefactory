@@ -70,12 +70,24 @@ export function UseCasesCarousel({ items }: { items: UseCaseCard[] }) {
                 key={`${uc.slug}-${i}`}
                 className="card card-hover group flex min-w-[280px] max-w-[320px] flex-col gap-4 sm:min-w-[320px]"
               >
-                <PlaceholderImage
-                  label={uc.client}
-                  aspect="video"
-                  tone={i % 3 === 0 ? 'brand' : i % 3 === 1 ? 'ink' : 'accent'}
-                  className="rounded-xl"
-                />
+                {uc.image ? (
+                  <div className="relative overflow-hidden rounded-xl">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={uc.image}
+                      alt={uc.client}
+                      className="aspect-video w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                ) : (
+                  <PlaceholderImage
+                    label={uc.client}
+                    aspect="video"
+                    tone={i % 3 === 0 ? 'brand' : i % 3 === 1 ? 'ink' : 'accent'}
+                    className="rounded-xl"
+                  />
+                )}
                 <div>
                   <div className="flex items-center justify-between text-xs font-medium uppercase tracking-widest text-ink-400">
                     <span>{uc.category}</span>

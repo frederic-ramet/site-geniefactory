@@ -12,6 +12,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${base}/aboutus`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${base}/solutions/gouvernance-ia`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${base}/transformation-agentique`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${base}/solutions/notariat`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/solutions/finance-comptabilite`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/solutions/claude-entreprise`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/programme-adopters`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
   ];
 

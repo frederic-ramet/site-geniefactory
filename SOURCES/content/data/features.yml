@@ -1,0 +1,56 @@
+# Les 6 blocs fonctionnalités
+# Textes alignés sur la stratégie "transformation agentique" (pas de "no-code", "24h")
+
+- number: "01"
+  slug: specifications-intelligentes
+  title: "Spécifications intelligentes"
+  subtitle: "Conception orientée besoins métier"
+  description: "L'Établi guide vos équipes pour transformer les idées en spécifications partagées, enrichies de KPIs mesurables. Les métiers restent propriétaires du besoin, la plateforme le rend exploitable."
+  image: /images/features/specifications.png
+  icon: /images/icons/specs.svg
+  alt: "Interface de spécification intelligente – capture collaborative des besoins métier avec KPIs intégrés"
+
+- number: "02"
+  slug: cycle-accelere
+  title: "Cycle accéléré"
+  subtitle: "Pensée pour la performance"
+  description: "Réduisez drastiquement vos délais de mise en production. La Forge génère le code et déploie automatiquement, en cloud managé ou on-premise."
+  image: /images/features/cycle.png
+  icon: /images/icons/cycle.svg
+  alt: "Schéma du cycle de déploiement accéléré – de 10 semaines à 24h grâce à la Forge Genie Factory"
+
+- number: "03"
+  slug: composants-ia
+  title: "Composants IA réutilisables"
+  subtitle: "Personnalisation simple"
+  description: "Accédez à une bibliothèque de briques applicatives (agents, RAG, templates sectoriels) et assemblez vos applications en fonction de vos cas d'usage, sans repartir de zéro."
+  image: /images/features/composants.png
+  icon: /images/icons/components.svg
+  alt: "Bibliothèque de composants IA réutilisables Genie Factory – agents, RAG et templates sectoriels"
+
+- number: "04"
+  slug: compatible-environnements
+  title: "Compatible avec vos environnements"
+  subtitle: "Intégration fluide"
+  description: "Nos applications API-first s'intègrent facilement aux systèmes existants (ERP, CRM, workflows internes, API IT). Gouvernance et sécurité incluses dès la conception."
+  image: /images/features/integration.png
+  icon: /images/icons/integration.svg
+  alt: "Intégration API-first d'une application IA Genie Factory avec ERP et outils métier existants"
+
+- number: "05"
+  slug: conformite-by-design
+  title: "Conformité by design"
+  subtitle: "Gouvernance intégrée"
+  description: "Traçabilité, gestion des rôles, supervision continue et conformité AI Act sont intégrées nativement. Vous gardez le contrôle tout en accélérant vos projets."
+  image: /images/features/gouvernance.png
+  icon: /images/icons/governance.svg
+  alt: "Tableau de bord de gouvernance IA Genie Factory – conformité AI Act, RBAC et traçabilité intégrés"
+
+- number: "06"
+  slug: prototypage-rapide
+  title: "Du besoin au POC en heures"
+  subtitle: "Prête au lancement"
+  description: "Déployez un prototype testable par vos métiers, évaluez les résultats via les KPIs, et itérez immédiatement. L'innovation devient mesurable et actionnable."
+  image: /images/features/prototype.png
+  icon: /images/icons/prototype.svg
+  alt: "Prototype IA déployé par Genie Factory – évaluation immédiate des résultats métier"
